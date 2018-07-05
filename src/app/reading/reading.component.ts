@@ -15,7 +15,7 @@ export class ReadingComponent implements OnInit {
   }
 
   readingInfo: string = `Here is a list of books I've read - 
-  starting with the most recent ones. Anything that I've found
+  starting with the most recent. Anything that I've found
   particularly good or interesting is bolded.`
 
   books: Book[] = [

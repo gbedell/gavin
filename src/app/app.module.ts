@@ -4,18 +4,29 @@ import { RouterModule, Routes } from '@angular/router';
 
 import { AppComponent } from './app.component';
 import { ReadingComponent } from './reading/reading.component';
+import { HomeComponent } from './home/home.component';
 
 const appRoutes: Routes = [
   {
-     path: 'reading',
-     component: ReadingComponent
-  }
+    path: 'reading',
+    component: ReadingComponent
+  },
+  {
+    path: 'home',
+    component: HomeComponent
+  },
+  {
+    path: '**', 
+    redirectTo: 'home', 
+    pathMatch: 'full'
+  },
 ]
 
 @NgModule({
   declarations: [
     AppComponent,
-    ReadingComponent
+    ReadingComponent,
+    HomeComponent
   ],
   imports: [
     RouterModule.forRoot(
