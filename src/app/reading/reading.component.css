@@ -1,0 +1,32 @@
+.reading-container {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.reading-intro-container {
+    margin-bottom: 50px;
+}
+
+.reading-intro {
+    text-align: center;
+}
+
+.books-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.book-container {
+    margin: 0 0 10px 0;
+    text-align: center;
+}
+
+.book-title {
+    font-style: italic;
+}
+
+.recommended-book {
+    font-weight: bold;
+}

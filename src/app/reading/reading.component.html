@@ -1,0 +1,23 @@
+<div class="reading-container">
+
+  <div class="reading-intro-container">
+
+    <p class="reading-intro">
+
+      {{readingInfo}}
+
+    </p>
+
+  </div>
+
+  <div class="books-container">
+
+      <div *ngFor="let book of books" class="book-container">
+          
+        <span [ngClass]="{'recommended-book': book.recommend}" class="book-title">{{book.title}}</span><span> by {{book.author}}</span>
+        
+      </div>
+
+  </div>
+
+</div>
