@@ -9,7 +9,7 @@ import { MeComponent } from './me/me.component';
 
 const appRoutes: Routes = [
   {
-    path: 'reading',
+    path: 'bookshelf',
     component: ReadingComponent
   },
   {
