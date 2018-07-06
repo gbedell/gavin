@@ -1,33 +1,34 @@
 <div class="app-container">
 
-  <div class="header-container">
+  <div class="app-wrapper">
 
-    <div class="header-item">
+    <div class="header-container">
 
-      <a routerLink="home">Home</a>
+      <div class="header-item">
 
-    </div>
+        <a routerLink="home">Home</a>
 
-    <div class="header-item">
+      </div>
 
-      <a routerLink="reading">Reading</a>
+      <div class="header-item">
 
-    </div>
+        <a routerLink="me">About Me</a>
 
-    <div class="header-item">
+      </div>
 
-      Resume
+      <div class="header-item">
 
-    </div>
+        <a routerLink="reading">Reading</a>
 
-    <div class="header-item">
-
-      Pictures
+      </div>
 
     </div>
+
+    <router-outlet></router-outlet>
+
 
   </div>
 
-  <router-outlet></router-outlet>
+
 
 </div>

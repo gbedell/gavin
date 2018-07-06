@@ -20,7 +20,7 @@
 
       <div *ngFor="let book of books" class="book-container">
           
-        <span [ngClass]="{'recommended-book': book.recommend}" class="book-title">{{book.title}}</span><span> by {{book.author}}</span>
+        <span [ngClass]="{'recommended-book': book.recommend}" class="book-title">{{book.title}}</span><span> - {{book.author}}</span>
         
       </div>
 

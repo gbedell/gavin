@@ -1,6 +1,10 @@
 .app-container {
     display: flex;
-    flex-direction: column;
+    justify-content: center;
+}
+
+.app-wrapper {
+    flex: 0 1 75%;
 }
 
 .header-container {
