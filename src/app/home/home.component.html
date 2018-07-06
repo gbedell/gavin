@@ -1,3 +1,21 @@
-<p>
-  home works!
-</p>
+<div class="home-container">
+
+    <div class="headshot-container">
+
+        <img id="headshot" [src]="'assets/headshot.jpg'">
+
+    </div>
+
+    <div class="social-container">
+
+        <div *ngFor="let social of socialLinks" class="social-icon">
+
+            <img class="social-icon-image" [src]="social.imageUrl" (click)="goToSocial(social.url)">
+
+        </div>
+
+    </div>
+
+  
+
+</div>
