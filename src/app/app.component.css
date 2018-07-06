@@ -16,6 +16,10 @@
 }
 
 .header-item {
-    font-size: 36px;
     margin: 0 10px 0 10px;
+}
+
+.header-item a {
+    color: 	#376595;
+    font-size: 36px;
 }

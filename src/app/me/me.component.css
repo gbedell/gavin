@@ -1,0 +1,19 @@
+.about-me-container {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.about-me-container-child {
+    margin-bottom: 25px;
+}
+
+.about-me-intro {
+    text-align: center;
+    margin: 0;
+}
+
+.education-image {
+    height: 28px;
+    max-width: 100%;
+}

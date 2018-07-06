@@ -1,3 +1,21 @@
-<p>
-  me works!
-</p>
+<div class="about-me-container">
+
+  <div class="about-me-container-child">
+
+    <p class="about-me-intro">{{intro}}</p>
+
+  </div>
+
+  <div class="about-me-container-child">
+    Work
+  </div>
+
+  <div class="about-me-container-child">
+
+    Education
+
+    <gavin-education *ngFor="let education of educations" [education]="education" class="education container"></gavin-education>
+
+  </div>
+
+</div>

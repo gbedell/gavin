@@ -28,22 +28,29 @@ export class ReadingComponent implements OnInit {
       dateFinished: null
     },
     {
-      title: "Principles",
-      author: "Ray Dalio",
-      recommend: true,
-      amazonLink: "http://a.co/0HI7ahX",
-      dateStarted: new Date('Monday, January 1, 2018'),
-      dateFinished: null
-    },
-    {
       title: "Thomas Jefferson and the Tripoli Pirates",
       author: "Brian Kilmeade",
       recommend: false,
       amazonLink: null,
       dateStarted: null,
       dateFinished: null
+    },
+    {
+      title: "Bad Blood: Secrets and Lies in a Silicon Valley Startup",
+      author: "John Carreyrou",
+      recommend: true,
+      amazonLink: "https://www.amazon.com/Bad-Blood-Secrets-Silicon-Startup/dp/152473165X/",
+      dateStarted: null,
+      dateFinished: null,
+    },
+    {
+      title: "Principles",
+      author: "Ray Dalio",
+      recommend: true,
+      amazonLink: "http://a.co/0HI7ahX",
+      dateStarted: new Date('Monday, January 1, 2018'),
+      dateFinished: null
     }
   ]
-
 
 }
