@@ -1,3 +1,6 @@
+/**
+ * A representation of education
+ */
 export class Education {
     institution: string;
     institutionImageUrl: string;

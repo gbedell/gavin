@@ -8,7 +8,40 @@ import { Education } from '../../models/education.model';
   encapsulation: ViewEncapsulation.None
 })
 export class MeComponent implements OnInit {
-  showEducation: boolean = true;
+  showEducation = true;
+
+  intro = `Some lame intro I have not come up with yet`;
+
+  educations: Education[] = [
+    {
+      institution: 'University of Maryland - College Park',
+      institutionImageUrl: '/assets/umd.jpg',
+      degreeName: 'Bachelor of Arts, Economics',
+      dateStarted: 'August 2009',
+      dateCompleted: 'May 2014',
+    },
+    {
+      institution: 'Udacity',
+      institutionImageUrl: '/assets/udacity.svg',
+      degreeName: 'Artificial Intelligence Nanodegree',
+      dateStarted: 'June 2017',
+      dateCompleted: 'December 2017',
+    },
+    {
+      institution: 'Udacity',
+      institutionImageUrl: '/assets/udacity.svg',
+      degreeName: 'Full Stack Web Developer Nanodegree',
+      dateStarted: 'December 2015',
+      dateCompleted: 'April 2016',
+    },
+    {
+      institution: 'Udacity',
+      institutionImageUrl: '/assets/udacity.svg',
+      degreeName: 'Intro to Programming Nanodegree',
+      dateStarted: 'September 2015',
+      dateCompleted: 'November 2015',
+    }
+  ];
 
   constructor() { }
 
@@ -18,38 +51,5 @@ export class MeComponent implements OnInit {
   toggleEducation() {
     this.showEducation = !this.showEducation;
   }
-
-  intro: string = `Some lame intro I have not come up with yet`;
-
-  educations: Education[] = [
-    {
-      institution: "University of Maryland - College Park",
-      institutionImageUrl: "/assets/umd.jpg",
-      degreeName: "Bachelor of Arts, Economics",
-      dateStarted: "August 2009",
-      dateCompleted: "May 2014",
-    },
-    {
-      institution: "Udacity",
-      institutionImageUrl: "/assets/udacity.svg",
-      degreeName: "Artificial Intelligence Nanodegree",
-      dateStarted: "June 2017",
-      dateCompleted: "December 2017",
-    },
-    {
-      institution: "Udacity",
-      institutionImageUrl: "/assets/udacity.svg",
-      degreeName: "Full Stack Web Developer Nanodegree",
-      dateStarted: "December 2015",
-      dateCompleted: "April 2016",
-    },
-    {
-      institution: "Udacity",
-      institutionImageUrl: "/assets/udacity.svg",
-      degreeName: "Intro to Programming Nanodegree",
-      dateStarted: "September 2015",
-      dateCompleted: "November 2015",
-    }
-  ]
 
 }

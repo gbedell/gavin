@@ -22,11 +22,11 @@ const appRoutes: Routes = [
     component: MeComponent
   },
   {
-    path: '**', 
-    redirectTo: 'home', 
+    path: '**',
+    redirectTo: 'home',
     pathMatch: 'full'
   },
-]
+];
 
 @NgModule({
   declarations: [

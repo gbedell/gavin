@@ -8,49 +8,48 @@ import { Book } from '../../models/book.model';
   encapsulation: ViewEncapsulation.None
 })
 export class ReadingComponent implements OnInit {
-
-  constructor() { }
-
-  ngOnInit() {
-  }
-
-  readingInfo: string = `Here is a list of books I've read - 
-  starting with the most recent. Anything that I've found
-  particularly good or interesting is bolded.`
+  readingInfo = `Here is a list of books I've read -
+   starting with the most recent. Anything that I've found
+  particularly good or interesting is bolded.`;
 
   books: Book[] = [
     {
-      title: "Thinking, Fast and Slow",
-      author: "Daniel Kahneman",
+      title: 'Thinking, Fast and Slow',
+      author: 'Daniel Kahneman',
       recommend: true,
-      amazonLink: "http://a.co/gbBADbn",
+      amazonLink: 'http://a.co/gbBADbn',
       dateStarted: new Date('Tuesday, June 26, 2018'),
       dateFinished: null
     },
     {
-      title: "Thomas Jefferson and the Tripoli Pirates",
-      author: "Brian Kilmeade",
+      title: 'Thomas Jefferson and the Tripoli Pirates',
+      author: 'Brian Kilmeade',
       recommend: false,
       amazonLink: null,
       dateStarted: null,
       dateFinished: null
     },
     {
-      title: "Bad Blood: Secrets and Lies in a Silicon Valley Startup",
-      author: "John Carreyrou",
+      title: 'Bad Blood: Secrets and Lies in a Silicon Valley Startup',
+      author: 'John Carreyrou',
       recommend: true,
-      amazonLink: "https://www.amazon.com/Bad-Blood-Secrets-Silicon-Startup/dp/152473165X/",
+      amazonLink: 'https://www.amazon.com/Bad-Blood-Secrets-Silicon-Startup/dp/152473165X/',
       dateStarted: null,
       dateFinished: null,
     },
     {
-      title: "Principles",
-      author: "Ray Dalio",
+      title: 'Principles',
+      author: 'Ray Dalio',
       recommend: true,
-      amazonLink: "http://a.co/0HI7ahX",
+      amazonLink: 'http://a.co/0HI7ahX',
       dateStarted: new Date('Monday, January 1, 2018'),
       dateFinished: null
     }
-  ]
+  ];
+
+  constructor() { }
+
+  ngOnInit() {
+  }
 
 }
