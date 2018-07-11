@@ -1,10 +1,28 @@
-<div>
-  <div>
-    
+<div class="education-container">
+
+  <div class="education-top-container">
+
+    <div class="education-image-container">
+
       <img *ngIf="education.institutionImageUrl" class="education-image" [src]="education.institutionImageUrl">
-    
+
+    </div>
+
+    <div class="education-institution-container">
+
       {{education.institution}}
-    
+
+    </div>
+
   </div>
-  <p>{{education.degreeName}}</p>
+
+  <div class="education-details-container">
+
+    <p>{{education.degreeName}}</p>
+    <p class="italic gavin-font-sm">{{education.dateStarted}} - {{education.dateCompleted}}</p>
+
+  </div>
+  
+  <!-- <p>{{education.degreeName}}</p> -->
+
 </div>

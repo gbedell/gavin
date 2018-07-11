@@ -1,0 +1,13 @@
+.education-container {
+    margin-bottom: 24px;
+}
+
+.education-top-container {
+    display: flex;
+    align-items: center;
+    margin-bottom: 8px;
+}
+
+.education-image-container {
+    margin-right: 12px;
+}
