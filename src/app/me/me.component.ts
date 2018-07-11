@@ -8,10 +8,15 @@ import { Education } from '../../models/education.model';
   encapsulation: ViewEncapsulation.None
 })
 export class MeComponent implements OnInit {
+  showEducation: boolean = true;
 
   constructor() { }
 
   ngOnInit() {
+  }
+
+  toggleEducation() {
+    this.showEducation = !this.showEducation;
   }
 
   intro: string = `Some lame intro I have not come up with yet`;
@@ -20,7 +25,7 @@ export class MeComponent implements OnInit {
     {
       institution: "University of Maryland - College Park",
       institutionImageUrl: "/assets/umd.jpg",
-      degreeName: "B.A. Economics",
+      degreeName: "Bachelor of Arts, Economics",
       dateStarted: "August 2009",
       dateCompleted: "May 2014",
     },

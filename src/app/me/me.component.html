@@ -12,7 +12,24 @@
 
   <div class="about-me-container-child">
 
-    <gavin-education *ngFor="let education of educations" [education]="education" class="education container"></gavin-education>
+    <div class="about-me-title-container">
+
+      <!-- <div class="about-me-title">
+        Education
+      </div> -->
+
+      <!-- Not needed right now -->
+      <!-- <div class="about-me-caret-container" (click)="toggleEducation()" >
+        <img class="about-me-caret" [src]="'/assets/caret.svg'">
+      </div> -->
+
+    </div>
+
+    <ng-container *ngIf="showEducation">
+
+      <gavin-education *ngFor="let education of educations" [education]="education" class="education container"></gavin-education>
+
+    </ng-container>
 
   </div>
 

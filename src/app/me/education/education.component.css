@@ -5,9 +5,13 @@
 .education-top-container {
     display: flex;
     align-items: center;
-    margin-bottom: 8px;
+    margin-bottom: 0;
 }
 
 .education-image-container {
     margin-right: 12px;
+}
+
+.education-details-container p {
+    margin: 0;
 }

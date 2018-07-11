@@ -4,6 +4,10 @@
     flex-direction: column;
 }
 
+.reading-intro-container {
+    margin-bottom: 24px;
+}
+
 .reading-intro {
     text-align: center;
     margin: 0;
@@ -16,7 +20,7 @@
 }
 
 .book-container {
-    margin: 0 0 20px 0;
+    margin: 0 0 12px 0;
     text-align: center;
 }
 
@@ -29,7 +33,7 @@
     color: 	#376595;
 }
 
-.page-break-container {
+/* .page-break-container {
     text-align: center;
     margin: 25px 0 25px 0;
-}
+} */
