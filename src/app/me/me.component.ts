@@ -48,17 +48,30 @@ export class MeComponent implements OnInit {
   works: Work[] = [
     {
       employer: 'AT&T',
+      employerImageUrl: '/assets/attglobe.png',
+      jobs: [
+        {
+          title: "Sr Specialist-Software Engineer",
+          startDate: null,
+          endDate: null
+        },
+        {
+          title: "Associate-Applications Developer",
+          startDate: null,
+          endDate: null
+        }
+      ]
+    },
+    {
+      employer: 'RainKing Solutions',
       employerImageUrl: null,
-      title: 'Sr Specialist-Software Engineer',
-      startDate: null,
-      endDate: null
-    // },
-    // {
-    //   employer: 'RainKing Solutions',
-    //   employerImageUrl: null,
-    //   title: 'Senior Research Operations Analyst',
-    //   startDate: null,
-    //   endDate: null
+      jobs: [
+        {
+          title: "Senior Research Operations Analyst",
+          startDate: null,
+          endDate: null
+        }
+      ]
     }
   ];
 

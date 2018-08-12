@@ -4,7 +4,7 @@
 
     <div class="work-image-container">
 
-      <img *ngIf="work.employerImageUrl" [src]="work.employerImageUrl">
+      <img *ngIf="work.employerImageUrl" class="education-image" [src]="work.employerImageUrl">
 
     </div>
 
@@ -16,10 +16,9 @@
 
   </div>
 
-  <div class="work-details-container">
+  <div class="work-jobs-container">
 
-    <p>{{ work.title}}</p>
-    <p class="italic gavin-font-sm">October 2017 - Present</p>
+    <gavin-job *ngFor="let job of work.jobs" [job]="job"></gavin-job>
 
   </div>
 

@@ -1,8 +1,16 @@
 .work-container {
     display: flex;
     flex-direction: column;
+    margin-bottom: 24px;
 }
 
-.work-details-container p {
-    margin: 0;
+.work-top-container {
+    display: flex;
+    align-items: center;
+    margin-bottom: 0;
+}
+
+.work-jobs-container {
+    display: flex;
+    flex-direction: column;
 }

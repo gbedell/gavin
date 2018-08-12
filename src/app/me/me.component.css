@@ -1,7 +1,8 @@
 .about-me-container {
     display: flex;
     justify-content: center;
-    flex-direction: column;
+    flex-direction: row;
+    flex-wrap: wrap;
 }
 
 .about-me-container-child {
