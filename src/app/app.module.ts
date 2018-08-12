@@ -7,6 +7,7 @@ import { ReadingComponent } from './reading/reading.component';
 import { HomeComponent } from './home/home.component';
 import { MeComponent } from './me/me.component';
 import { EducationComponent } from './me/education/education.component';
+import { WorkComponent } from './me/work/work.component';
 
 const appRoutes: Routes = [
   {
@@ -34,7 +35,8 @@ const appRoutes: Routes = [
     ReadingComponent,
     HomeComponent,
     MeComponent,
-    EducationComponent
+    EducationComponent,
+    WorkComponent
   ],
   imports: [
     RouterModule.forRoot(
