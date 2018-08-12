@@ -1,5 +1,6 @@
 import { Component, OnInit, ViewEncapsulation } from '@angular/core';
 import { Education } from '../../models/education.model';
+import { Work } from '../../models/work.model';
 
 @Component({
   selector: 'gavin-me',
@@ -9,6 +10,7 @@ import { Education } from '../../models/education.model';
 })
 export class MeComponent implements OnInit {
   showEducation = true;
+  showWork = true;
 
   intro = `Some lame intro I have not come up with yet`;
 
@@ -40,6 +42,23 @@ export class MeComponent implements OnInit {
       degreeName: 'Intro to Programming Nanodegree',
       dateStarted: 'September 2015',
       dateCompleted: 'November 2015',
+    }
+  ];
+
+  works: Work[] = [
+    {
+      employer: 'AT&T',
+      employerImageUrl: null,
+      title: 'Sr Specialist-Software Engineer',
+      startDate: null,
+      endDate: null
+    // },
+    // {
+    //   employer: 'RainKing Solutions',
+    //   employerImageUrl: null,
+    //   title: 'Senior Research Operations Analyst',
+    //   startDate: null,
+    //   endDate: null
     }
   ];
 

@@ -31,6 +31,12 @@
 
     </ng-container>
 
+    <ng-container *ngIf="showWork">
+
+      <gavin-work *ngFor="let work of works" [work]="work"></gavin-work>
+
+    </ng-container>
+
   </div>
 
 </div>

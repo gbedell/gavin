@@ -1,0 +1,26 @@
+<div class="work-container">
+
+  <div class="work-top-container">
+
+    <div class="work-image-container">
+
+      <img *ngIf="work.employerImageUrl" [src]="work.employerImageUrl">
+
+    </div>
+
+    <div class="work-employer-name-container">
+
+      {{ work.employer }}
+
+    </div>
+
+  </div>
+
+  <div class="work-details-container">
+
+    <p>{{ work.title}}</p>
+    <p class="italic gavin-font-sm">October 2017 - Present</p>
+
+  </div>
+
+</div>
