@@ -1,5 +1,5 @@
 import { Component, OnInit, ViewEncapsulation } from '@angular/core';
-import { MeData } from '../../data/me.data'
+import { MeData } from '../../data/me.data';
 import { Social } from '../../models/social.model';
 
 @Component({

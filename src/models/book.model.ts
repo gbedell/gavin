@@ -9,3 +9,5 @@ export class Book {
     dateStarted: Date;
     dateFinished: Date;
 }
+
+

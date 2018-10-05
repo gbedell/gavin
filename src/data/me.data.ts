@@ -26,6 +26,4 @@ export class MeData {
             imageUrl: '/assets/social-icons/f-ogo_RGB_HEX-58.png'
         }
     ];
-
-
 }

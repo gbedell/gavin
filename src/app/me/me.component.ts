@@ -51,12 +51,12 @@ export class MeComponent implements OnInit {
       employerImageUrl: '/assets/attglobe.png',
       jobs: [
         {
-          title: "Sr Specialist-Software Engineer",
+          title: 'Sr Specialist-Software Engineer',
           startDate: null,
           endDate: null
         },
         {
-          title: "Associate-Applications Developer",
+          title: 'Associate-Applications Developer',
           startDate: null,
           endDate: null
         }
@@ -67,7 +67,7 @@ export class MeComponent implements OnInit {
       employerImageUrl: null,
       jobs: [
         {
-          title: "Senior Research Operations Analyst",
+          title: 'Senior Research Operations Analyst',
           startDate: null,
           endDate: null
         }
