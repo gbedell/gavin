@@ -6,7 +6,7 @@
 
     </div>
 
-    <div class="social-container">
+    <div *ngIf="hasSocialLinks()" class="social-container">
 
         <div *ngFor="let social of socialLinks" class="social-icon">
 

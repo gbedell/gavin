@@ -4,7 +4,7 @@
 }
 
 .app-wrapper {
-    flex: 0 1 65%;
+    flex: 0 1 50%;
 }
 
 .header-container {
@@ -43,4 +43,5 @@
     color: 	#376595;
     font-size: 44px;
     font-weight: bold;
+    text-align: center;
 }

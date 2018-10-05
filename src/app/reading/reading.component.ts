@@ -1,4 +1,5 @@
 import { Component, OnInit, ViewEncapsulation } from '@angular/core';
+import { ReadingData } from '../../data/reading.data';
 import { Book } from '../../models/book.model';
 
 @Component({
@@ -8,48 +9,21 @@ import { Book } from '../../models/book.model';
   encapsulation: ViewEncapsulation.None
 })
 export class ReadingComponent implements OnInit {
-  readingInfo = `Here is a list of books I've read -
-   starting with the most recent. Anything that I've found
-  particularly good or interesting is bolded.`;
-
-  books: Book[] = [
-    {
-      title: 'Thinking, Fast and Slow',
-      author: 'Daniel Kahneman',
-      recommend: true,
-      amazonLink: 'http://a.co/gbBADbn',
-      dateStarted: new Date('Tuesday, June 26, 2018'),
-      dateFinished: null
-    },
-    {
-      title: 'Thomas Jefferson and the Tripoli Pirates',
-      author: 'Brian Kilmeade',
-      recommend: false,
-      amazonLink: null,
-      dateStarted: null,
-      dateFinished: null
-    },
-    {
-      title: 'Bad Blood: Secrets and Lies in a Silicon Valley Startup',
-      author: 'John Carreyrou',
-      recommend: true,
-      amazonLink: 'https://www.amazon.com/Bad-Blood-Secrets-Silicon-Startup/dp/152473165X/',
-      dateStarted: null,
-      dateFinished: null,
-    },
-    {
-      title: 'Principles',
-      author: 'Ray Dalio',
-      recommend: true,
-      amazonLink: 'http://a.co/0HI7ahX',
-      dateStarted: new Date('Monday, January 1, 2018'),
-      dateFinished: null
-    }
-  ];
+  readingInfo: String;
+  books: Book[] = [];
 
   constructor() { }
 
   ngOnInit() {
+    this.readingInfo = ReadingData.readingIntro;
+    this.books = ReadingData.books;
+  }
+
+  /**
+   * Returns true if there are books to display.
+   */
+  public hasBooks(): boolean {
+    return this.books.length > 0;
   }
 
 }

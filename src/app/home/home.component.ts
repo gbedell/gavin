@@ -1,4 +1,5 @@
 import { Component, OnInit, ViewEncapsulation } from '@angular/core';
+import { MeData } from '../../data/me.data'
 import { Social } from '../../models/social.model';
 
 @Component({
@@ -8,31 +9,28 @@ import { Social } from '../../models/social.model';
   encapsulation: ViewEncapsulation.None
 })
 export class HomeComponent implements OnInit {
-  socialLinks: Social[] = [
-    {
-      name: 'LinkedIn',
-      url: 'https://www.linkedin.com/in/gavinbedell/',
-      imageUrl: '/assets/social-icons/linkedin-34px.png'
-    },
-    {
-      name: 'GitHub',
-      url: 'https://github.com/gbedell',
-      imageUrl: '/assets/social-icons/GitHub-Mark-32px.png'
-    },
-    {
-      name: 'Facebook',
-      url: 'https://www.facebook.com/gavin.bedell',
-      imageUrl: '/assets/social-icons/f-ogo_RGB_HEX-58.png'
-    }
-  ];
+  socialLinks: Social[] = [];
 
   constructor() { }
 
   ngOnInit() {
+    this.socialLinks = MeData.socialLinks;
   }
 
-  goToSocial(url: string) {
+  /**
+   * Opens a new tab in the browser to the specified
+   * url.
+   * @param url the url to go to
+   */
+  public goToSocial(url: string) {
     window.open(url, '_blank');
+  }
+
+  /**
+   * Returns true if there are socialLinks to display.
+   */
+  public hasSocialLinks(): boolean {
+    return this.socialLinks.length > 0;
   }
 
 }
