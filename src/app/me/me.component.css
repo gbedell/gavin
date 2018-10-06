@@ -3,15 +3,16 @@
     justify-content: center;
     flex-direction: row;
     flex-wrap: wrap;
+    margin: 0;
 }
 
 .about-me-container-child {
     margin-bottom: 25px;
+    justify-content: center;
 }
 
-.about-me-intro {
-    text-align: center;
-    margin: 0;
+.about-me-heading {
+    
 }
 
 .education-image {

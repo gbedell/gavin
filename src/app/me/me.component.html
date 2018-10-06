@@ -2,38 +2,21 @@
 
   <div class="about-me-container-child">
 
-    <!-- <p class="about-me-intro">{{intro}}</p> -->
-
-  </div>
-
-  <!-- <div class="about-me-container-child">
-    Work
-  </div> -->
-
-  <div class="about-me-container-child">
-
-    <div class="about-me-title-container">
-
-      <!-- <div class="about-me-title">
-        Education
-      </div> -->
-
-      <!-- Not needed right now -->
-      <!-- <div class="about-me-caret-container" (click)="toggleEducation()" >
-        <img class="about-me-caret" [src]="'/assets/caret.svg'">
-      </div> -->
-
-    </div>
-
-    <ng-container *ngIf="showEducation">
-
-      <gavin-education *ngFor="let education of educations" [education]="education" class="education container"></gavin-education>
-
-    </ng-container>
+    <div class="about-me-title-container"></div>
 
     <ng-container *ngIf="showWork">
 
+      <!-- <div class="gavin-font-lg">Work Experience</div> -->
+
       <gavin-work *ngFor="let work of works" [work]="work"></gavin-work>
+
+    </ng-container>
+
+    <ng-container *ngIf="showEducation">
+
+      <!-- <div class="gavin-font-lg">Education</div> -->
+
+      <gavin-education *ngFor="let education of educations" [education]="education" class="education container"></gavin-education>
 
     </ng-container>
 
