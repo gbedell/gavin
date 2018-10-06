@@ -3,36 +3,20 @@
   <div class="app-wrapper">
 
     <div class="header-name-container">
-      
+
       <span id="header-name">{{ myName }}</span>
 
     </div>
 
     <div class="header-container">
 
-      <div class="header-item">
+      <a class="header-item" routerLinkActive="header-item-selected" routerLink="home">Home</a>
 
-        <a routerLink="home">Home</a>
+      <a class="header-item" routerLinkActive="header-item-selected" routerLink="me">About</a>
 
-      </div>
+      <a class="header-item" routerLinkActive="header-item-selected" routerLink="me">Resume</a>
 
-      <div class="header-item">
-
-        <a routerLink="me">About</a>
-
-      </div>
-
-      <div class="header-item">
-
-          <a routerLink="me">Resume</a>
-  
-        </div>
-
-      <div class="header-item">
-
-        <a routerLink="bookshelf">Bookshelf</a>
-
-      </div>
+      <a class="header-item" routerLinkActive="header-item-selected" routerLink="bookshelf">Bookshelf</a>
 
     </div>
 
