@@ -1,0 +1,11 @@
+<!-- <p *ngFor="let tab of tabs">
+    <a routerLinkActive="" routerLink="{{ tab.route }}">
+        {{ tab.displayName }}
+    </a>
+</p> -->
+
+<div class="dropdown-container">
+
+    <gavin-dropdown-item *ngFor="let tab of tabs" [tab]="tab"></gavin-dropdown-item>
+
+</div>

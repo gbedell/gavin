@@ -9,8 +9,13 @@ import { MeData } from '../data/me.data';
 })
 export class AppComponent implements OnInit {
   myName: String;
+  mobile: boolean = false;
 
   ngOnInit() {
+    if (window.screen.width < 500) { // 768px portrait
+      this.mobile = true;
+    }
+
     this.myName = MeData.myName;
   }
 

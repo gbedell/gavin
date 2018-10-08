@@ -8,7 +8,9 @@
 
     </div>
 
-    <gavin-tabs></gavin-tabs>
+    <gavin-tabs *ngIf="!mobile"></gavin-tabs>
+
+    <gavin-tabs-dropdown *ngIf="mobile"></gavin-tabs-dropdown>
 
     <router-outlet></router-outlet>
 

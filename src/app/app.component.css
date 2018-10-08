@@ -10,7 +10,7 @@
 /* For small screens adjust the header items */
 @media all and (max-width: 500px) {
     .app-wrapper {
-        flex: 0 1 95%;
+        flex: 0 1 75%;
     }
 }
 

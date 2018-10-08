@@ -1,4 +1,5 @@
 import { Component, OnInit, ViewEncapsulation, Input } from '@angular/core';
+import { Tab } from '../../../models/tab.model';
 
 @Component({
   selector: 'gavin-tab',
@@ -7,9 +8,7 @@ import { Component, OnInit, ViewEncapsulation, Input } from '@angular/core';
   encapsulation: ViewEncapsulation.None
 })
 export class TabComponent implements OnInit {
-  @Input("displayName") displayName: String;
-
-  @Input("route") route: String;
+  @Input() tab: Tab;
 
   constructor() { }
 

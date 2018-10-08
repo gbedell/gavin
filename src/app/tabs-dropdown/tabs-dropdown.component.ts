@@ -3,12 +3,12 @@ import { Tab } from '../../models/tab.model';
 import { TabsData } from '../../data/tabs.data';
 
 @Component({
-  selector: 'gavin-tabs',
-  templateUrl: './tabs.component.html',
-  styleUrls: ['./tabs.component.css'],
+  selector: 'gavin-tabs-dropdown',
+  templateUrl: './tabs-dropdown.component.html',
+  styleUrls: ['./tabs-dropdown.component.css'],
   encapsulation: ViewEncapsulation.None
 })
-export class TabsComponent implements OnInit {
+export class TabsDropdownComponent implements OnInit {
   tabs: Tab[] = [];
 
   constructor() { }
