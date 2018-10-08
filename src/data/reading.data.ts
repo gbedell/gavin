@@ -13,6 +13,16 @@ export class ReadingData {
 
   public static books: Book[] = [
     {
+      title: `Creative Selection: Inside Apple's Design Process
+       During the Golden Age of Steve Jobs`,
+      author: 'Ken Kocienda',
+      recommend: false,
+      amazonLink: `https://www.amazon.com/Creative-Selection-
+      Inside-Apples-Process/dp/1250194466`,
+      dateStarted: null,
+      dateFinished: new Date('October 7, 2018')
+    },
+    {
       title: 'Measure What Matters',
       author: 'John Doerr',
       recommend: true,

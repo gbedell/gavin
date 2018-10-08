@@ -9,6 +9,8 @@ import { MeComponent } from './me/me.component';
 import { EducationComponent } from './me/education/education.component';
 import { WorkComponent } from './me/work/work.component';
 import { JobComponent } from './me/work/job/job.component';
+import { TabsComponent } from './tabs/tabs.component';
+import { TabComponent } from './tabs/tab/tab.component';
 
 const appRoutes: Routes = [
   {
@@ -38,7 +40,9 @@ const appRoutes: Routes = [
     MeComponent,
     EducationComponent,
     WorkComponent,
-    JobComponent
+    JobComponent,
+    TabsComponent,
+    TabComponent
   ],
   imports: [
     RouterModule.forRoot(
