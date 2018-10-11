@@ -1,5 +1,5 @@
 import { Component, OnInit, ViewEncapsulation, Input } from '@angular/core';
-import { Router } from '@angular/router' 
+import { Router } from '@angular/router';
 import { Tab } from '../../../models/tab.model';
 
 @Component({
@@ -10,10 +10,15 @@ import { Tab } from '../../../models/tab.model';
 })
 export class DropdownItemComponent implements OnInit {
   @Input() tab: Tab;
+  @Input() default = false;
 
   constructor(private router: Router) { }
 
-  ngOnInit() { }
+  ngOnInit() {
+    if (this.default) {
+      console.log('default tab' + this.tab.displayName);
+    }
+  }
 
   /**
    * Routes the tab's specified route.

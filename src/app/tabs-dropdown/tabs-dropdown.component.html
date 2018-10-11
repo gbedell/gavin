@@ -1,11 +1,17 @@
-<!-- <p *ngFor="let tab of tabs">
-    <a routerLinkActive="" routerLink="{{ tab.route }}">
-        {{ tab.displayName }}
-    </a>
-</p> -->
+<div *ngIf="activeTab" [ngClass]="{ 'menu-expanded': dropdownExpanded }" class="dropdown-menu-container">
 
-<div class="dropdown-container">
+    <div (click)="toggleDropdown()" class="active-dropdown-container">
 
-    <gavin-dropdown-item *ngFor="let tab of tabs" [tab]="tab"></gavin-dropdown-item>
+        {{ activeTab.displayName }}
+
+        <!-- <img class="caret" src="assets/down-arrow.svg"> -->
+
+    </div>
+
+    <div *ngIf="dropdownExpanded" class="dropdown-container">
+
+        <gavin-dropdown-item *ngFor="let tab of tabs" [tab]="tab"></gavin-dropdown-item>
+
+    </div>
 
 </div>

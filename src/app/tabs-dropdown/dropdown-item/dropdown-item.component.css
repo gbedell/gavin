@@ -1,8 +1,7 @@
 .dropdown-item-container {
-    color: white;
+    color: #7699bf;
     font-weight: bold;
-    background-color: #7699bf;
-    padding-left: 10px;
-    font-size: 28px;
-    border-radius: 2px;
+    background-color: white;
+    padding: 10px 0 10px 10px;
+    font-size: 18px;
 }
