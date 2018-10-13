@@ -13,6 +13,7 @@ import { TabsComponent } from './tabs/tabs.component';
 import { TabComponent } from './tabs/tab/tab.component';
 import { TabsDropdownComponent } from './tabs-dropdown/tabs-dropdown.component';
 import { DropdownItemComponent } from './tabs-dropdown/dropdown-item/dropdown-item.component';
+import { FooterComponent } from './footer/footer.component';
 
 const appRoutes: Routes = [
   {
@@ -46,7 +47,8 @@ const appRoutes: Routes = [
     TabsComponent,
     TabComponent,
     TabsDropdownComponent,
-    DropdownItemComponent
+    DropdownItemComponent,
+    FooterComponent
   ],
   imports: [
     RouterModule.forRoot(

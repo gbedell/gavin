@@ -9,19 +9,19 @@ export class TabsData {
 
     public static tabs: Tab[] = [
         {
-            displayName: 'Home',
+            displayName: 'HOME',
             route: 'home'
         },
         {
-            displayName: 'About',
+            displayName: 'ABOUT',
             route: 'me'
         },
         {
-            displayName: 'Resume',
+            displayName: 'RESUME',
             route: 'me'
         },
         {
-            displayName: 'Bookshelf',
+            displayName: 'BOOKSHELF',
             route: 'bookshelf'
         }
     ];
