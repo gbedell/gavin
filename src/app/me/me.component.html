@@ -1,5 +1,9 @@
 <div class="about-me-container">
 
+  <p class="gavin-tab-page-header">
+    {{ heading | uppercase }}
+  </p>
+
   <gavin-work *ngFor="let work of works" [work]="work"></gavin-work>
 
   <gavin-education *ngFor="let education of educations" [education]="education" class="education container"></gavin-education>

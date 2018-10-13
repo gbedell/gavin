@@ -18,11 +18,15 @@ export class TabsData {
         },
         {
             displayName: 'RESUME',
-            route: 'me'
+            route: 'resume'
         },
         {
             displayName: 'BOOKSHELF',
             route: 'bookshelf'
+        },
+        {
+            displayName: 'LINKS',
+            route: 'links'
         }
     ];
 }

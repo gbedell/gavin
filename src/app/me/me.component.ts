@@ -12,6 +12,8 @@ export class MeComponent implements OnInit {
   showEducation = true;
   showWork = true;
 
+  heading = 'Resume';
+
   intro = `Some lame intro I have not come up with yet`;
 
   educations: Education[] = [
