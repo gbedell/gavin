@@ -1,25 +1,7 @@
 <div class="about-me-container">
 
-  <div class="about-me-container-child">
+  <gavin-work *ngFor="let work of works" [work]="work"></gavin-work>
 
-    <div class="about-me-title-container"></div>
-
-    <ng-container *ngIf="showWork">
-
-      <!-- <div class="gavin-font-lg">Work Experience</div> -->
-
-      <gavin-work *ngFor="let work of works" [work]="work"></gavin-work>
-
-    </ng-container>
-
-    <ng-container *ngIf="showEducation">
-
-      <!-- <div class="gavin-font-lg">Education</div> -->
-
-      <gavin-education *ngFor="let education of educations" [education]="education" class="education container"></gavin-education>
-
-    </ng-container>
-
-  </div>
+  <gavin-education *ngFor="let education of educations" [education]="education" class="education container"></gavin-education>
 
 </div>

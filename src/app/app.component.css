@@ -16,13 +16,12 @@
 
 .header-name-container {
     display: flex;
-    justify-content: center;
+    justify-content: left;
     margin: 24px 0 24px 0;
 }
 
 #header-name {
-    color: 	#376595;
+    color: black;
     font-size: 44px;
     font-weight: bold;
-    text-align: center;
 }

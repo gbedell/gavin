@@ -1,26 +1,9 @@
 <div class="education-container">
 
-  <div class="education-top-container">
-
-    <!-- <div class="education-image-container"> -->
-
-      <!-- <img *ngIf="education.institutionImageUrl" class="education-image" [src]="education.institutionImageUrl"> -->
-
-    <!-- </div> -->
-
-    <div class="education-institution-container">
-
-      <span class="gavin-font-lg bold">{{ education.institution }}</span>
-
-    </div>
-
-  </div>
-
-  <div class="education-details-container">
-
-    <p>{{education.degreeName}}</p>
-    <p class="italic gavin-font-sm">{{education.dateStarted}} - {{education.dateCompleted}}</p>
-
-  </div>
+  <p class="gavin-font-lg bold no-margin"> {{ education.institution }} </p>
+  <p class="no-margin">{{ education.degreeName }}</p>
+  <p class="gavin-font-sm italic no-margin">
+    {{ education.dateStarted | date: 'MMMM yyyy' }} - {{education.dateCompleted | date: 'MMMM yyyy' }}
+  </p>
 
 </div>

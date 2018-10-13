@@ -1,16 +1,15 @@
 .tab-item {
     margin: 0;
-    border-bottom: 2px solid #d6d6d6;
     flex: 0 1 auto;
-    color: 	#376595;
-    font-size: 28px;
+    color: #999;
+    font-size: 14px;
     text-decoration: none;
 }
 
 .tab-item:hover {
-    border-bottom-color: #a6a6a6;
+    color: black;
 }
 
 .tab-item-selected {
-    border-bottom-color: #376595 !important;
+    color: black !important;
 }

@@ -52,13 +52,18 @@ export class MeComponent implements OnInit {
       jobs: [
         {
           title: 'Sr Specialist-Software Engineer',
-          startDate: null,
+          startDate: new Date('December 2017'),
           endDate: null
         },
         {
           title: 'Associate-Applications Developer',
-          startDate: null,
-          endDate: null
+          startDate: new Date('September 2016'),
+          endDate: new Date('December 2017')
+        },
+        {
+          title: 'Technical Intern',
+          startDate: new Date('June 2016'),
+          endDate: new Date('August 2016')
         }
       ]
     },
@@ -68,8 +73,18 @@ export class MeComponent implements OnInit {
       jobs: [
         {
           title: 'Senior Research Operations Analyst',
-          startDate: null,
-          endDate: null
+          startDate: new Date('October 2015'),
+          endDate: new Date('May 2016')
+        },
+        {
+          title: 'Research Operations Analyst',
+          startDate: new Date('March 2015'),
+          endDate: new Date('October 2015')
+        },
+        {
+          title: 'Research Intern',
+          startDate: new Date('June 2014'),
+          endDate: new Date('March 2015')
         }
       ]
     }

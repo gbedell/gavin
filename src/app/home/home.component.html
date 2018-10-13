@@ -1,18 +1,8 @@
 <div class="home-container">
 
-    <div class="headshot-container">
+    <div class="home-image-container">
 
-        <img id="headshot" [src]="'assets/headshot.jpg'">
-
-    </div>
-
-    <div *ngIf="hasSocialLinks()" class="social-container">
-
-        <div *ngFor="let social of socialLinks" class="social-icon">
-
-            <img class="social-icon-image" [src]="social.imageUrl" (click)="goToSocial(social.url)">
-
-        </div>
+        <img id="home-image" [src]="'assets/zion.jpg'">
 
     </div>
 
