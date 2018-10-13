@@ -18,6 +18,8 @@
     display: flex;
     justify-content: left;
     margin: 24px 0 24px 0;
+    align-items: baseline;
+    justify-content: space-between;
 }
 
 #header-name {

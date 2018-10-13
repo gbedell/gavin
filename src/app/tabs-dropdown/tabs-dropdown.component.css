@@ -1,17 +1,4 @@
-.dropdown-menu-container {
+.dropdown-container {
+    border-bottom: 1px solid #999;
     margin-bottom: 24px;
-}
-
-.menu-expanded {
-    box-shadow: 0 28px 28px 0 rgba(0, 0, 0, .08);
-}
-
-.active-dropdown-container {
-    color: white;
-    font-weight: bold;
-    background-color: #7699bf;
-    padding-left: 10px;
-    font-size: 18px;
-    border-radius: 2px;
-    padding: 10px 0 10px 10px;
 }

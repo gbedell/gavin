@@ -1,15 +1,5 @@
-<div *ngIf="activeTab" [ngClass]="{ 'menu-expanded': dropdownExpanded }" class="dropdown-menu-container">
+<div class="dropdown-container">
 
-    <div (click)="toggleDropdown()" class="active-dropdown-container">
-
-        {{ activeTab.displayName }}
-
-    </div>
-
-    <div *ngIf="dropdownExpanded" class="dropdown-container">
-
-        <gavin-dropdown-item *ngFor="let tab of tabs" [tab]="tab"></gavin-dropdown-item>
-
-    </div>
+    <gavin-dropdown-item *ngFor="let tab of tabs" [tab]="tab"></gavin-dropdown-item>
 
 </div>
