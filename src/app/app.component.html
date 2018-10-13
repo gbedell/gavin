@@ -16,7 +16,7 @@
 
     <gavin-tabs *ngIf="!mobile"></gavin-tabs>
 
-    <gavin-tabs-dropdown *ngIf="mobile && dropdownExpanded"></gavin-tabs-dropdown>
+    <gavin-tabs-dropdown *ngIf="mobile" [dropdownExpanded]="dropdownExpanded" ></gavin-tabs-dropdown>
 
     <router-outlet></router-outlet>
 
