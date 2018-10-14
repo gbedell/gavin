@@ -27,3 +27,8 @@
     font-size: 44px;
     font-weight: bold;
 }
+
+#dropdown-menu-button {
+    width: 24px;
+    height: auto;
+}
