@@ -1,0 +1,11 @@
+<div class="resume-container">
+
+  <p class="gavin-tab-page-header">
+    {{ heading | uppercase }}
+  </p>
+
+  <gavin-work *ngFor="let work of workHistory" [work]="work"></gavin-work>
+
+  <gavin-education *ngFor="let education of educationHistory" [education]="education"></gavin-education>
+
+</div>
