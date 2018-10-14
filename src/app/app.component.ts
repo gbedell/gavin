@@ -23,4 +23,8 @@ export class AppComponent implements OnInit {
     this.dropdownExpanded = !this.dropdownExpanded;
   }
 
+  onTabClicked(clicked: boolean) {
+    if (clicked) { this.dropdownExpanded = false; }
+  }
+
 }

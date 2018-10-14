@@ -1,5 +1,5 @@
-<div *ngIf="dropdownExpanded" class="dropdown-container">
+<div *ngIf="expandDropdown" class="dropdown-container">
 
-    <gavin-dropdown-item *ngFor="let tab of tabs" (click)="goToRoute(tab)"  [tab]="tab"></gavin-dropdown-item>
+    <gavin-dropdown-item *ngFor="let tab of tabs" (click)="goToRoute(tab)" (clicked)="onClicked($event)"  [tab]="tab"></gavin-dropdown-item>
 
 </div>
