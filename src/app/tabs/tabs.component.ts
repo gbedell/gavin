@@ -1,5 +1,6 @@
 import { Component, OnInit, ViewEncapsulation } from '@angular/core';
 import { Tab } from '../../models/tab.model';
+import { TabsData } from '../../data/tabs.data';
 
 @Component({
   selector: 'gavin-tabs',
@@ -8,27 +9,12 @@ import { Tab } from '../../models/tab.model';
   encapsulation: ViewEncapsulation.None
 })
 export class TabsComponent implements OnInit {
-  tabs: Tab[] = [
-    {
-      displayName: 'Home',
-      route: 'home'
-    },
-    {
-      displayName: 'About',
-      route: 'me'
-    },
-    {
-      displayName: 'Resume',
-      route: 'me'
-    },
-    {
-      displayName: 'Bookshelf',
-      route: 'bookshelf'
-    }
-  ];
+  tabs: Tab[] = [];
 
   constructor() { }
 
-  ngOnInit() { }
+  ngOnInit() {
+    this.tabs = TabsData.tabs;
+  }
 
 }

@@ -2,12 +2,12 @@ import { Component, OnInit, ViewEncapsulation, Input } from '@angular/core';
 import { Tab } from '../../../models/tab.model';
 
 @Component({
-  selector: 'gavin-tab',
-  templateUrl: './tab.component.html',
-  styleUrls: ['./tab.component.css'],
+  selector: 'gavin-dropdown-item',
+  templateUrl: './dropdown-item.component.html',
+  styleUrls: ['./dropdown-item.component.css'],
   encapsulation: ViewEncapsulation.None
 })
-export class TabComponent implements OnInit {
+export class DropdownItemComponent implements OnInit {
   @Input() tab: Tab;
 
   constructor() { }

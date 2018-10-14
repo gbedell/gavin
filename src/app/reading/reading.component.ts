@@ -12,6 +12,7 @@ export class ReadingComponent implements OnInit {
   readingInfo: String;
   books: Book[] = [];
   sortedBooks: Book[] = [];
+  heading = 'Bookshelf';
 
   constructor() { }
 

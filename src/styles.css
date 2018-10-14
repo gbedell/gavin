@@ -9,11 +9,16 @@
 }
 
 .gavin-font-md {
-    font-size: 16px;
+    font-size: 14px;
 }
 
 .gavin-font-lg {
     font-size: 20px;
+}
+
+.gavin-tab-page-header {
+    font-size: 24px;
+    margin: 0 0 24px 0;
 }
 
 .italic {
@@ -26,4 +31,8 @@
 
 .bold {
     font-weight: bold;
+}
+
+.no-margin {
+    margin: 0;
 }

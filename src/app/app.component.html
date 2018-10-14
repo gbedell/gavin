@@ -4,13 +4,23 @@
 
     <div class="header-name-container">
 
-      <span id="header-name">{{ myName }}</span>
+      <div id="header-name">
+        {{ myName }}
+      </div>
+
+      <div (click)="toggleDropdown()" *ngIf="mobile">
+        <img id="dropdown-menu-button" src="/assets/menu-button.svg">
+      </div>
 
     </div>
 
-    <gavin-tabs></gavin-tabs>
+    <gavin-tabs *ngIf="!mobile"></gavin-tabs>
+
+    <gavin-tabs-dropdown *ngIf="mobile" [expandDropdown]="dropdownExpanded" (tabClicked)="onTabClicked($event)"></gavin-tabs-dropdown>
 
     <router-outlet></router-outlet>
+
+    <gavin-footer></gavin-footer>
 
   </div>
 

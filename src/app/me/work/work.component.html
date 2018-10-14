@@ -1,24 +1,10 @@
 <div class="work-container">
 
-  <div class="work-top-container">
-
-    <!-- <div class="work-image-container"> -->
-
-      <!-- <img *ngIf="work.employerImageUrl" class="education-image" [src]="work.employerImageUrl"> -->
-
-    <!-- </div> -->
-
-    <div class="work-employer-name-container">
-
-      <span class="gavin-font-lg bold">{{ work.employer }}</span>
-
-    </div>
-
-  </div>
+  <p class="gavin-font-lg bold no-margin">{{ work.employer }}</p>
 
   <div class="work-jobs-container">
 
-    <gavin-job *ngFor="let job of work.jobs" [job]="job"></gavin-job>
+    <gavin-job *ngFor="let job of work.jobs" [job]="job" ></gavin-job>
 
   </div>
 

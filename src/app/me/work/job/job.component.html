@@ -1,7 +1,11 @@
-<div class="job-container">
+<p class="no-margin">{{ job.title }}</p>
 
-  <p>{{ job.title }}</p>
-  <p class="italic gavin-font-sm">October 2017-Present</p>
-  <!-- <p>{{ job.startDate }} - {{ job.endDate }}</p> -->
+<p class="italic gavin-font-sm no-margin">
 
-</div>
+  <span>{{ job.startDate | date: 'MMMM yyyy' }}</span>
+
+  <span *ngIf="job.endDate">- {{ job.endDate | date: 'MMMM yyyy' }}</span>
+
+  <span *ngIf="!job.endDate">- Present</span>
+
+</p>

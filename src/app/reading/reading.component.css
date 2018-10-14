@@ -9,8 +9,8 @@
 }
 
 .reading-intro {
-    text-align: center;
-    margin: 0;
+    text-align: justify;
+    line-height: 1.5em;
 }
 
 .books-container {
@@ -21,11 +21,7 @@
 
 .book-container {
     margin: 0 0 12px 0;
-    text-align: center;
-}
-
-.book-title {
-    font-style: italic;
+    text-align: justify;
 }
 
 .recommended-book {
