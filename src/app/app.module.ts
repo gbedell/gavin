@@ -6,14 +6,15 @@ import { AppComponent } from './app.component';
 import { ReadingComponent } from './reading/reading.component';
 import { HomeComponent } from './home/home.component';
 import { MeComponent } from './me/me.component';
-import { EducationComponent } from './me/education/education.component';
-import { WorkComponent } from './me/work/work.component';
-import { JobComponent } from './me/work/job/job.component';
+import { EducationComponent } from './resume/education/education.component';
+import { WorkComponent } from './resume/work/work.component';
+import { JobComponent } from './resume/work/job/job.component';
 import { TabsComponent } from './tabs/tabs.component';
 import { TabComponent } from './tabs/tab/tab.component';
 import { TabsDropdownComponent } from './tabs-dropdown/tabs-dropdown.component';
 import { DropdownItemComponent } from './tabs-dropdown/dropdown-item/dropdown-item.component';
 import { FooterComponent } from './footer/footer.component';
+import { ResumeComponent } from './resume/resume.component';
 
 const appRoutes: Routes = [
   {
@@ -27,6 +28,10 @@ const appRoutes: Routes = [
   {
     path: 'me',
     component: MeComponent
+  },
+  {
+    path: 'resume',
+    component: ResumeComponent
   },
   {
     path: '**',
@@ -48,7 +53,8 @@ const appRoutes: Routes = [
     TabComponent,
     TabsDropdownComponent,
     DropdownItemComponent,
-    FooterComponent
+    FooterComponent,
+    ResumeComponent
   ],
   imports: [
     RouterModule.forRoot(
