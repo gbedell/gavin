@@ -1,11 +1,16 @@
 <div class="work-container">
 
-  <p class="gavin-font-lg bold no-margin">{{ work.employer }}</p>
+  <p class="titles">
+    {{ work.title | uppercase }}
+  </p>
 
-  <div class="work-jobs-container">
+  <p class="work-info bold no-margin">
 
-    <gavin-job *ngFor="let job of work.jobs" [job]="job" ></gavin-job>
+    {{ work.employer }}, {{ work.location }}, {{ work.startDate | date: 'MMMM yyyy' }} - {{ work.endDate | date: 'MMMM
+    yyyy' }}
 
-  </div>
+  </p>
+
+  <p class="work-description no-margin">{{ work.description }}</p>
 
 </div>

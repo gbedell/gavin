@@ -1,3 +1,5 @@
-.job-container p {
-    margin: 0;
+.job-container {
+    display: flex;
+    flex-flow: column wrap;
+    margin-bottom: 24px;
 }

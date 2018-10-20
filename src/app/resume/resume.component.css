@@ -2,3 +2,18 @@
     display: flex;
     flex-direction: column;
 }
+
+.resume-work-container {
+    display: flex;
+    flex-flow: row wrap;
+    align-items: flex-start;
+}
+
+.resume-header {
+    flex: 0 1 33%;
+    white-space: nowrap;
+}
+
+.resume-work-wrapper {
+    flex: 1 1 66%;
+}

@@ -4,8 +4,22 @@
     {{ heading | uppercase }}
   </p>
 
-  <gavin-work *ngFor="let work of workHistory" [work]="work"></gavin-work>
+  <div class="resume-work-container">
 
-  <gavin-education *ngFor="let education of educationHistory" [education]="education"></gavin-education>
+    <div class="gavin-tab-page-subheading resume-header">Work Experience</div>
+
+    <div class="resume-work-wrapper">
+
+        <gavin-work *ngFor="let work of workHistory" [work]="work"></gavin-work>
+
+    </div>
+
+    
+
+  </div>
+
+
+
+  <!-- <gavin-education *ngFor="let education of educationHistory" [education]="education"></gavin-education> -->
 
 </div>
