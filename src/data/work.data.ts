@@ -28,7 +28,16 @@ export class WorkData {
                     startDate: new Date('June 2016'),
                     endDate: new Date('August 2016')
                 }
-            ]
+            ],
+            description: `Lorem ipsum dolor sit amet, consectetur adipiscing
+             elit. Sed sollicitudin cursus dolor ut tristique. Quisque ornare,
+              quam ac maximus aliquam, sem purus sodales quam, a sollicitudin
+               leo sapien vitae enim. Mauris tincidunt ligula est, tempus viverra
+                velit fermentum id. Sed eu cursus risus. Curabitur ac augue sed
+                 libero posuere finibus. Lorem ipsum dolor sit amet, consectetur
+                  adipiscing elit. Sed ultrices ligula id ante imperdiet, eget
+                   elementum sem volutpat.`,
+            title: 'Software Engineer'
         },
         {
             employer: 'RainKing Solutions',
@@ -52,7 +61,17 @@ export class WorkData {
                     startDate: new Date('June 2014'),
                     endDate: new Date('March 2015')
                 }
-            ]
-        }
+            ],
+            description: `Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+             Suspendisse sit amet ante eu sapien rutrum pretium sed a augue.
+              Mauris pulvinar ultrices quam ut tincidunt. Curabitur pharetra
+               diam odio, non luctus ex pellentesque at. Donec imperdiet pulvinar
+                urna, vel ultricies nunc. Suspendisse dui urna, varius nec magna
+                 nec, ullamcorper ultrices sem. Class aptent taciti sociosqu ad
+                  litora torquent per conubia nostra, per inceptos himenaeos.
+                   Maecenas id augue sagittis, egestas magna eget, ullamcorper sem.
+                    Mauris finibus orci leo, nec elementum justo pulvinar in.`,
+            title: 'Operations Analyst'
+        },
     ];
 }

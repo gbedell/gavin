@@ -1,10 +1,18 @@
 .work-container {
     display: flex;
     flex-direction: column;
-    margin-bottom: 24px;
+    margin: 0 0 24px 0;
 }
 
-.work-jobs-container {
-    display: flex;
-    flex-direction: column;
+.titles {
+    margin: 0 0 14px 0;
+}
+
+.work-description {
+    font-weight: 300;
+}
+
+.work-info,
+.work-description {
+    line-height: 1.5em;
 }

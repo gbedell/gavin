@@ -10,4 +10,6 @@ export class Work {
     jobs: Job[];
     startDate: Date;
     endDate: Date;
+    description: String;
+    title: String;
 }

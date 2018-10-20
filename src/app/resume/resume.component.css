@@ -2,3 +2,19 @@
     display: flex;
     flex-direction: column;
 }
+
+.resume-content-container {
+    display: flex;
+    flex-flow: row wrap;
+    align-items: flex-start;
+}
+
+.resume-header {
+    flex: 0 0 33%;
+    white-space: nowrap;
+    min-width: 175px;
+}
+
+.resume-content-wrapper {
+    flex: 1 1 66%;
+}

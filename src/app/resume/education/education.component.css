@@ -1,5 +1,8 @@
 .education-container {
-    display: flex;
-    flex-direction: column;
     margin-bottom: 24px;
+    line-height: 1.5em;
+}
+
+.education-info {
+    font-weight: bold;
 }
