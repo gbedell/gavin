@@ -8,11 +8,6 @@
     margin-bottom: 24px;
 }
 
-.reading-intro {
-    text-align: justify;
-    line-height: 1.5em;
-}
-
 .books-container {
     display: flex;
     flex-direction: column;
@@ -20,11 +15,5 @@
 }
 
 .book-container {
-    margin: 0 0 12px 0;
-    text-align: justify;
-}
-
-.recommended-book {
-    font-weight: bold;
-    color: 	#376595;
+    margin-bottom: 12px;
 }

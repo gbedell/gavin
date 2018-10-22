@@ -9,4 +9,9 @@
 
 .link {
     margin-bottom: 12px;
+    color: black;
+}
+
+.link:visited {
+    color: black;
 }
