@@ -15,6 +15,7 @@ import { TabsDropdownComponent } from './tabs-dropdown/tabs-dropdown.component';
 import { DropdownItemComponent } from './tabs-dropdown/dropdown-item/dropdown-item.component';
 import { FooterComponent } from './footer/footer.component';
 import { ResumeComponent } from './resume/resume.component';
+import { LinksComponent } from './links/links.component';
 
 const appRoutes: Routes = [
   {
@@ -32,6 +33,10 @@ const appRoutes: Routes = [
   {
     path: 'resume',
     component: ResumeComponent
+  },
+  {
+    path: 'links',
+    component: LinksComponent
   },
   {
     path: '**',
@@ -54,7 +59,8 @@ const appRoutes: Routes = [
     TabsDropdownComponent,
     DropdownItemComponent,
     FooterComponent,
-    ResumeComponent
+    ResumeComponent,
+    LinksComponent
   ],
   imports: [
     RouterModule.forRoot(

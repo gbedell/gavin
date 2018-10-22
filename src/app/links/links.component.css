@@ -1,0 +1,12 @@
+.links-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.links-header-container {
+    margin-bottom: 24px;
+}
+
+.link {
+    margin-bottom: 12px;
+}

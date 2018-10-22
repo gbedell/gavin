@@ -1,0 +1,17 @@
+<div class="links-container">
+
+  <div class="links-header-container">
+
+    <p class="gavin-tab-page-header">
+      {{ heading | uppercase }}
+    </p>
+
+    <p class="links-intro no-margin">
+      {{ intro }}
+    </p>
+
+  </div>
+
+  <a *ngFor="let link of links" href="{{ link.url }}" target="_blank" class="link">{{ link.displayName }}</a>
+
+</div>
