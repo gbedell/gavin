@@ -1,7 +1,7 @@
 import { Component, OnInit, ViewEncapsulation, Input, Output, EventEmitter } from '@angular/core';
 import { Router } from '@angular/router';
 import { Tab } from '../../models/tab.model';
-import { TabsData } from '../../data/tabs.data';
+import { TabService } from '../shared/tab.service';
 
 @Component({
   selector: 'gavin-tabs-dropdown',
@@ -14,10 +14,13 @@ export class TabsDropdownComponent implements OnInit {
   @Input() expandDropdown = false;
   @Output() tabClicked = new EventEmitter<boolean>();
 
-  constructor(private router: Router) { }
+  constructor(
+    private router: Router,
+    private tabService: TabService
+  ) { }
 
   ngOnInit() {
-    this.tabs = TabsData.tabs;
+    this.tabs = this.tabService.getTabs();
   }
 
   goToRoute(tab: Tab) {

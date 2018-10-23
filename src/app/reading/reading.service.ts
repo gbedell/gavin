@@ -1,17 +1,15 @@
 import { Injectable } from '@angular/core';
-import { Book } from '../models/book.model';
 
-/**
- * Constants class to hold my reading data.
- */
+import { Book } from '../../models/book.model';
+
 @Injectable()
-export class ReadingData {
+export class ReadingService {
 
-  public static readingIntro = `Here is a list of books I've read -
+  private readingIntro = `Here is a list of books I've read -
    starting with the most recent. Anything that I've found
    particularly good or interesting is bolded.`;
 
-  public static books: Book[] = [
+  private books: Book[] = [
     {
       title: `Creative Selection: Inside Apple's Design Process
        During the Golden Age of Steve Jobs`,
@@ -145,4 +143,12 @@ export class ReadingData {
       dateFinished: new Date('September 21, 2016')
     }
   ];
+
+  public getReadingIntro(): String {
+    return this.readingIntro;
+  }
+
+  public getBooks(): Book[] {
+    return this.books;
+  }
 }

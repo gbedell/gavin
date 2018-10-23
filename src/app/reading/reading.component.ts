@@ -1,24 +1,26 @@
 import { Component, OnInit, ViewEncapsulation } from '@angular/core';
-import { ReadingData } from '../../data/reading.data';
+
 import { Book } from '../../models/book.model';
+import { ReadingService } from './reading.service';
 
 @Component({
   selector: 'gavin-reading',
   templateUrl: './reading.component.html',
   styleUrls: ['./reading.component.css'],
-  encapsulation: ViewEncapsulation.None
+  encapsulation: ViewEncapsulation.None,
+  providers: [ReadingService]
 })
 export class ReadingComponent implements OnInit {
-  readingInfo: String;
   books: Book[] = [];
-  sortedBooks: Book[] = [];
   heading = 'Bookshelf';
+  readingInfo: String;
+  sortedBooks: Book[] = [];
 
-  constructor() { }
+  constructor(private readingService: ReadingService) { }
 
   ngOnInit() {
-    this.readingInfo = ReadingData.readingIntro;
-    this.books = ReadingData.books;
+    this.readingInfo = this.readingService.getReadingIntro();
+    this.books = this.readingService.getBooks();
 
     // Sort the books
     if (this.hasBooks) { this.sortedBooks = this.sortBooks(this.books); }

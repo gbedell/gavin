@@ -1,10 +1,10 @@
 import { Injectable } from '@angular/core';
-import { Link } from '../models/link.model';
+import { Link } from '../../models/link.model';
 
 @Injectable()
-export class LinksData {
+export class LinksService {
 
-    private static links: Link[] = [
+    private links: Link[] = [
         {
             displayName: 'Future Focused: Udacity and AT&T Join Forces to Train Workers for the Jobs of Tomorrow',
             url: 'https://blog.udacity.com/2018/09/udacity-and-att-join-forces-to-train-workers-for-the-jobs-of-tomorrow.html'
@@ -27,7 +27,7 @@ export class LinksData {
         }
     ];
 
-    public static getLinks(): Link[] {
+    public getLinks(): Link[] {
         return this.links;
     }
 

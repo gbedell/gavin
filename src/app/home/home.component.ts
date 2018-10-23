@@ -1,5 +1,5 @@
 import { Component, OnInit, ViewEncapsulation } from '@angular/core';
-import { MeData } from '../../data/me.data';
+import { MeService } from '../shared/me.service';
 import { Social } from '../../models/social.model';
 
 @Component({
@@ -11,10 +11,10 @@ import { Social } from '../../models/social.model';
 export class HomeComponent implements OnInit {
   socialLinks: Social[] = [];
 
-  constructor() { }
+  constructor(private meService: MeService) { }
 
   ngOnInit() {
-    this.socialLinks = MeData.socialLinks;
+    this.socialLinks = this.meService.getSocialLinks();
   }
 
   /**

@@ -1,22 +1,26 @@
 import { Component, OnInit, ViewEncapsulation } from '@angular/core';
-import { MeData } from '../data/me.data';
+
+import { MeService } from './shared/me.service';
 
 @Component({
   selector: 'gavin-root',
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css'],
-  encapsulation: ViewEncapsulation.None
+  encapsulation: ViewEncapsulation.None,
+  providers: []
 })
 export class AppComponent implements OnInit {
-  myName: String;
-  mobile = false;
   dropdownExpanded = false;
+  mobile = false;
+  myName: String;
+
+  constructor(private meService: MeService) { }
 
   ngOnInit() {
     if (window.screen.width < 500) { // 768px portrait
       this.mobile = true;
     }
-    this.myName = MeData.myName;
+    this.myName = this.meService.getMyName();
   }
 
   toggleDropdown() {

@@ -1,13 +1,11 @@
 import { Injectable } from '@angular/core';
-import { Tab } from '../models/tab.model';
 
-/**
- * Holds data for tabs.
- */
+import { Tab } from '../../models/tab.model';
+
 @Injectable()
-export class TabsData {
+export class TabService {
 
-    public static tabs: Tab[] = [
+    private tabs: Tab[] = [
         {
             displayName: 'HOME',
             route: 'home'
@@ -29,4 +27,8 @@ export class TabsData {
             route: 'links'
         }
     ];
+
+    public getTabs(): Tab[] {
+        return this.tabs;
+    }
 }

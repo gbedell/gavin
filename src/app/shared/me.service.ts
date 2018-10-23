@@ -1,15 +1,13 @@
 import { Injectable } from '@angular/core';
-import { Social } from '../models/social.model';
 
-/**
- * Constants class to hold data about me.
- */
+import { Social } from '../../models/social.model';
+
 @Injectable()
-export class MeData {
+export class MeService {
 
-    public static myName = 'Gavin Bedell';
+    private myName = 'Gavin Bedell';
 
-    public static socialLinks: Social[] = [
+    private socialLinks: Social[] = [
         {
             name: 'LinkedIn',
             url: 'https://www.linkedin.com/in/gavinbedell/',
@@ -26,4 +24,12 @@ export class MeData {
             imageUrl: '/assets/social-icons/f-ogo_RGB_HEX-58.png'
         }
     ];
+
+    public getMyName(): String {
+        return this.myName;
+    }
+
+    public getSocialLinks(): Social[] {
+        return this.socialLinks;
+    }
 }

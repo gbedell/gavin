@@ -1,6 +1,7 @@
 import { Component, OnInit, ViewEncapsulation } from '@angular/core';
+
 import { Tab } from '../../models/tab.model';
-import { TabsData } from '../../data/tabs.data';
+import { TabService } from '../shared/tab.service';
 
 @Component({
   selector: 'gavin-tabs',
@@ -11,10 +12,10 @@ import { TabsData } from '../../data/tabs.data';
 export class TabsComponent implements OnInit {
   tabs: Tab[] = [];
 
-  constructor() { }
+  constructor(private tabService: TabService) { }
 
   ngOnInit() {
-    this.tabs = TabsData.tabs;
+    this.tabs = this.tabService.getTabs();
   }
 
 }

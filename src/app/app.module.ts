@@ -16,6 +16,7 @@ import { DropdownItemComponent } from './tabs-dropdown/dropdown-item/dropdown-it
 import { FooterComponent } from './footer/footer.component';
 import { ResumeComponent } from './resume/resume.component';
 import { LinksComponent } from './links/links.component';
+import { SharedModule } from './shared/shared.module';
 
 const appRoutes: Routes = [
   {
@@ -67,7 +68,8 @@ const appRoutes: Routes = [
       appRoutes,
       { enableTracing: false },
     ),
-    BrowserModule
+    BrowserModule,
+    SharedModule
   ],
   providers: [],
   bootstrap: [AppComponent]
