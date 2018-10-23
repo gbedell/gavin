@@ -6,7 +6,7 @@
       {{ heading | uppercase }}
     </p>
 
-    <p class="reading-intro gavin-font-md no-margin">
+    <p class="no-margin line-height-expanded">
 
       {{readingInfo}}
 
@@ -16,13 +16,13 @@
 
   <div *ngIf="hasBooks()" class="books-container">
 
-    <div *ngFor="let book of books" class="book-container gavin-font-md">
+    <p *ngFor="let book of books" class="book-container no-margin light">
 
-      <span [ngClass]="{'recommended-book': book.recommend}" class="italic">{{book.title}}</span><span> -
+      <span [ngClass]="{'bold': book.recommend}">{{book.title}}</span><span> -
         {{book.author}}
       </span>
 
-    </div>
+    </p>
 
   </div>
 

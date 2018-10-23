@@ -4,13 +4,13 @@
     {{ work.title | uppercase }}
   </p>
 
-  <p class="work-info bold no-margin">
+  <p class="bold no-margin line-height-expanded">
 
     {{ work.employer }}, {{ work.location }}, {{ work.startDate | date: 'MMMM yyyy' }} - {{ work.endDate | date: 'MMMM
     yyyy' }}
 
   </p>
 
-  <p class="work-description no-margin">{{ work.description }}</p>
+  <p class="no-margin line-height-expanded light">{{ work.description }}</p>
 
 </div>
