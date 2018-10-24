@@ -1,25 +1,41 @@
 .app-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
 }
 
 .app-wrapper {
-    flex: 0 1 65%;
+    -webkit-box-flex: 0;
+        -ms-flex: 0 1 65%;
+            flex: 0 1 65%;
 }
 
 /* For small screens adjust the header items */
 @media all and (max-width: 500px) {
     .app-wrapper {
-        flex: 0 1 75%;
+        -webkit-box-flex: 0;
+            -ms-flex: 0 1 75%;
+                flex: 0 1 75%;
     }
 }
 
 .header-name-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: left;
+    -webkit-box-pack: left;
+        -ms-flex-pack: left;
+            justify-content: left;
     margin: 24px 0 24px 0;
-    align-items: baseline;
-    justify-content: space-between;
+    -webkit-box-align: baseline;
+        -ms-flex-align: baseline;
+            align-items: baseline;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
 }
 
 #header-name {

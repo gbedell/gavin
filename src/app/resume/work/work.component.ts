@@ -1,4 +1,6 @@
 import { Component, OnInit, ViewEncapsulation, Input } from '@angular/core';
+import { DatePipe } from '@angular/common';
+
 import { Work } from '../../../models/work.model';
 
 @Component({
@@ -10,9 +12,19 @@ import { Work } from '../../../models/work.model';
 export class WorkComponent implements OnInit {
   @Input() work: Work;
 
-  constructor() { }
+  private dateFormat = 'MMMM yyyy';
+  private present = 'Present';
 
-  ngOnInit() {
+  constructor(private datePipe: DatePipe) { }
+
+  ngOnInit() { }
+
+  get startDate(): String {
+    return this.datePipe.transform(this.work.startDate, this.dateFormat);
+  }
+
+  get endDate(): String {
+    return this.work.endDate == null ? this.present : this.datePipe.transform(this.work.endDate, this.dateFormat);
   }
 
 }
