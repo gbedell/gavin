@@ -107,11 +107,25 @@ export class ResumeService {
         },
     ];
 
+    private mainSkills: String[] = ['Java 8', 'Java Persistence API (JPA)', 'Angular',
+        'Jenkins', 'Maven', 'MySQL', 'Docker', 'Spring Boot', 'Linux', 'Python', 'CSS3', 'HTML5',
+        'Git', 'REST'];
+
+    private otherSkills: String[] = ['Tensorflow', 'Keras', 'Flask', 'Swift', 'MongoDB', 'PostgreSQL'];
+
     public getEducationHistory(): Education[] {
         return this.educationHistory;
     }
 
     public getWorkHistory(): Work[] {
         return this.workHistory;
+    }
+
+    public getMainSkills(): String[] {
+        return this.mainSkills;
+    }
+
+    public getOtherSkills(): String[] {
+        return this.otherSkills;
     }
 }
