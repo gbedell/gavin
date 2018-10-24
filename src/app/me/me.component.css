@@ -2,3 +2,24 @@
     display: flex;
     flex-direction: column;
 }
+
+.about-me-content-container {
+    display: flex;
+    flex-flow: row wrap;
+}
+
+.about-me-image-container {
+    flex: 0 0 33%;
+    white-space: nowrap;
+    min-width: 175px;
+    margin-bottom: 24px;
+}
+
+.about-me-intro-container {
+    flex: 1 1 66%;
+}
+
+#about-me-headshot {
+    width: 156px;
+    height: auto;
+}

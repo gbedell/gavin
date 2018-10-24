@@ -1,5 +1,7 @@
 import { Component, OnInit, ViewEncapsulation } from '@angular/core';
 
+import { MeService } from '../shared/me.service';
+
 @Component({
   selector: 'gavin-me',
   templateUrl: './me.component.html',
@@ -8,9 +10,12 @@ import { Component, OnInit, ViewEncapsulation } from '@angular/core';
 })
 export class MeComponent implements OnInit {
   heading = 'About Me';
+  description: String;
 
-  constructor() { }
+  constructor(private meService: MeService) { }
 
-  ngOnInit() { }
+  ngOnInit() {
+    this.description = this.meService.getMyDescription();
+  }
 
 }
