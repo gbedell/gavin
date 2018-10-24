@@ -11,29 +11,29 @@ export class ResumeService {
             institution: 'University of Maryland - College Park',
             institutionImageUrl: '/assets/umd.jpg',
             degreeName: 'Bachelor of Arts, Economics',
-            dateStarted: new Date('August 2009'),
-            dateCompleted: new Date('May 2014'),
+            dateStarted: new Date(2009, 7),
+            dateCompleted: new Date(2014, 4),
         },
         {
             institution: 'Udacity',
             institutionImageUrl: '/assets/udacity.svg',
             degreeName: 'Artificial Intelligence Nanodegree',
-            dateStarted: new Date('June 2017'),
-            dateCompleted: new Date('December 2017'),
+            dateStarted: new Date(2017, 5),
+            dateCompleted: new Date(2017, 11),
         },
         {
             institution: 'Udacity',
             institutionImageUrl: '/assets/udacity.svg',
             degreeName: 'Full Stack Web Developer Nanodegree',
-            dateStarted: new Date('December 2015'),
-            dateCompleted: new Date('April 2016'),
+            dateStarted: new Date(2015, 11),
+            dateCompleted: new Date(2016, 3),
         },
         {
             institution: 'Udacity',
             institutionImageUrl: '/assets/udacity.svg',
             degreeName: 'Intro to Programming Nanodegree',
-            dateStarted: new Date('September 2015'),
-            dateCompleted: new Date('November 2015'),
+            dateStarted: new Date(2015, 8),
+            dateCompleted: new Date(2015, 10),
         }
     ];
 
@@ -42,23 +42,23 @@ export class ResumeService {
             employer: 'AT&T',
             employerImageUrl: '/assets/attglobe.png',
             location: 'Dallas, TX',
-            startDate: new Date('June 2016'),
+            startDate: new Date(2016, 5),
             endDate: null,
             jobs: [
                 {
                     title: 'Sr Specialist-Software Engineer',
-                    startDate: new Date('December 2017'),
+                    startDate: new Date(2017, 11),
                     endDate: null
                 },
                 {
                     title: 'Associate-Applications Developer',
-                    startDate: new Date('September 2016'),
-                    endDate: new Date('December 2017')
+                    startDate: new Date(2016, 8),
+                    endDate: new Date(2017, 11)
                 },
                 {
                     title: 'Technical Intern',
-                    startDate: new Date('June 2016'),
-                    endDate: new Date('August 2016')
+                    startDate: new Date(2016, 5),
+                    endDate: new Date(2016, 7)
                 }
             ],
             description: `Lorem ipsum dolor sit amet, consectetur adipiscing
@@ -75,23 +75,23 @@ export class ResumeService {
             employer: 'RainKing Solutions',
             employerImageUrl: null,
             location: 'Bethesda, MD',
-            startDate: new Date('March 2015'),
-            endDate: new Date('May 2016'),
+            startDate: new Date(2014, 5),
+            endDate: new Date(2016, 4),
             jobs: [
                 {
                     title: 'Senior Research Operations Analyst',
-                    startDate: new Date('October 2015'),
-                    endDate: new Date('May 2016')
+                    startDate: new Date(2015, 9),
+                    endDate: new Date(2016, 4)
                 },
                 {
                     title: 'Research Operations Analyst',
-                    startDate: new Date('March 2015'),
-                    endDate: new Date('October 2015')
+                    startDate: new Date(2015, 2),
+                    endDate: new Date(2015, 9)
                 },
                 {
                     title: 'Research Intern',
-                    startDate: new Date('June 2014'),
-                    endDate: new Date('March 2015')
+                    startDate: new Date(2014, 5),
+                    endDate: new Date(2015, 2)
                 }
             ],
             description: `Lorem ipsum dolor sit amet, consectetur adipiscing elit.
