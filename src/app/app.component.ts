@@ -1,4 +1,5 @@
 import { Component, OnInit, ViewEncapsulation } from '@angular/core';
+import { Router } from '@angular/router';
 
 import { MeService } from './shared/me.service';
 
@@ -14,7 +15,10 @@ export class AppComponent implements OnInit {
   mobile = false;
   myName: String;
 
-  constructor(private meService: MeService) { }
+  constructor(
+    private meService: MeService,
+    private router: Router
+  ) { }
 
   ngOnInit() {
     if (window.screen.width < 500) { // 768px portrait
@@ -29,6 +33,10 @@ export class AppComponent implements OnInit {
 
   onTabClicked(clicked: boolean) {
     if (clicked) { this.dropdownExpanded = false; }
+  }
+
+  goToHome() {
+    this.router.navigate(['home']);
   }
 
 }

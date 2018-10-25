@@ -61,14 +61,14 @@ export class ResumeService {
                     endDate: new Date(2016, 7)
                 }
             ],
-            description: `Lorem ipsum dolor sit amet, consectetur adipiscing
-             elit. Sed sollicitudin cursus dolor ut tristique. Quisque ornare,
-              quam ac maximus aliquam, sem purus sodales quam, a sollicitudin
-               leo sapien vitae enim. Mauris tincidunt ligula est, tempus viverra
-                velit fermentum id. Sed eu cursus risus. Curabitur ac augue sed
-                 libero posuere finibus. Lorem ipsum dolor sit amet, consectetur
-                  adipiscing elit. Sed ultrices ligula id ante imperdiet, eget
-                   elementum sem volutpat.`,
+            description: `Currently, I am a Software Engineer supporting AT&T's Capabilities
+             Evolution - the business unit responsible for all learning, training, and
+             skills development within the company. In my role, I am a part of an Agile team
+             of full-stack developers working together to deliver a high-quality, easy to use
+             web application. My main responsibilities include Java development on
+             our REST API, which we use to serve clients throughout our application
+             ecosystem. Moreover, I have an active role in our application archicture,
+             deployment process, and requirements planning.`,
             title: 'Software Engineer'
         },
         {
@@ -94,15 +94,14 @@ export class ResumeService {
                     endDate: new Date(2015, 2)
                 }
             ],
-            description: `Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-             Suspendisse sit amet ante eu sapien rutrum pretium sed a augue.
-              Mauris pulvinar ultrices quam ut tincidunt. Curabitur pharetra
-               diam odio, non luctus ex pellentesque at. Donec imperdiet pulvinar
-                urna, vel ultricies nunc. Suspendisse dui urna, varius nec magna
-                 nec, ullamcorper ultrices sem. Class aptent taciti sociosqu ad
-                  litora torquent per conubia nostra, per inceptos himenaeos.
-                   Maecenas id augue sagittis, egestas magna eget, ullamcorper sem.
-                    Mauris finibus orci leo, nec elementum justo pulvinar in.`,
+            description: `While at RainKing - an enterprise software company that offered
+             sales intelligence through its web application - I worked on the Research Operations
+             team, primarily tasked with evaluating existing workflows for opportunities for
+             improvements, and subsequently designing and implementing new procedures when
+             when needed. One simple improvement I made during my time there was converting
+             our data scrubbing process from manual data entry to automated Excel macros.
+             Consequently, our data collection productivity increased 10x while simultaneously
+             improving data quality for our customers.`,
             title: 'Operations Analyst'
         },
     ];
