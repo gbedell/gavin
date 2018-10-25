@@ -16,6 +16,7 @@ import { FooterComponent } from './footer/footer.component';
 import { ResumeComponent } from './resume/resume.component';
 import { LinksComponent } from './links/links.component';
 import { SharedModule } from './shared/shared.module';
+import { SkillsComponent } from './resume/skills/skills.component';
 
 const appRoutes: Routes = [
   {
@@ -59,7 +60,8 @@ const appRoutes: Routes = [
     DropdownItemComponent,
     FooterComponent,
     ResumeComponent,
-    LinksComponent
+    LinksComponent,
+    SkillsComponent
   ],
   imports: [
     RouterModule.forRoot(
