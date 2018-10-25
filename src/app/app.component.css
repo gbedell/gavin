@@ -9,16 +9,16 @@
 
 .app-wrapper {
     -webkit-box-flex: 0;
-        -ms-flex: 0 1 65%;
-            flex: 0 1 65%;
+        -ms-flex: 0 1 85%;
+            flex: 0 1 85%;
 }
 
 /* For small screens adjust the header items */
 @media all and (max-width: 500px) {
     .app-wrapper {
         -webkit-box-flex: 0;
-            -ms-flex: 0 1 75%;
-                flex: 0 1 75%;
+            -ms-flex: 0 1 95%;
+                flex: 0 1 95%;
     }
 }
 

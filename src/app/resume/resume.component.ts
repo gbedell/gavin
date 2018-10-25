@@ -15,12 +15,16 @@ export class ResumeComponent implements OnInit {
   heading = 'Resume';
   educationHistory: Education[] = [];
   workHistory: Work[] = [];
+  mainSkills: String[] = [];
+  otherSkills: String[] = [];
 
   constructor(private resumeService: ResumeService) { }
 
   ngOnInit() {
     this.workHistory = this.resumeService.getWorkHistory();
     this.educationHistory = this.resumeService.getEducationHistory();
+    this.mainSkills = this.resumeService.getMainSkills();
+    this.otherSkills = this.resumeService.getOtherSkills();
   }
 
 }

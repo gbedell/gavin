@@ -28,8 +28,7 @@ export class MeService {
     private myDescription: String = `
     Welcome to my website. I currently live in Dallas, TX, but I was born and raised on
      Long Island, NY. I attended the University of Maryland (College Park), graduating
-     in 2014 with a B.A. in Economics.
-    `;
+     in 2014 with a B.A. in Economics.`;
 
     public getMyName(): String {
         return this.myName;
