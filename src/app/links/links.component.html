@@ -12,6 +12,11 @@
 
   </div>
 
-  <a *ngFor="let link of links" href="{{ link.url }}" target="_blank" class="link light">{{ link.displayName }}</a>
+  <div *ngFor="let link of links" class="link light">
+
+    <a href="{{ link.url }}" target="_blank">{{ link.displayName }}</a>
+
+  </div>
+
 
 </div>
