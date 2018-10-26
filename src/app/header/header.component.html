@@ -1,0 +1,15 @@
+<div class="header-container">
+
+  <div class="header-name-container" (click)="goToHome()">
+
+    <span id="header-name">{{ myName }}</span>
+
+  </div>
+
+  <div class="tabs-container">
+
+    <gavin-tab *ngFor="let tab of tabs" [tab]="tab"></gavin-tab>
+
+  </div>
+
+</div>

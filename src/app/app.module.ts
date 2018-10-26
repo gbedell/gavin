@@ -17,6 +17,7 @@ import { ResumeComponent } from './resume/resume.component';
 import { LinksComponent } from './links/links.component';
 import { SharedModule } from './shared/shared.module';
 import { SkillsComponent } from './resume/skills/skills.component';
+import { HeaderComponent } from './header/header.component';
 
 const appRoutes: Routes = [
   {
@@ -61,7 +62,8 @@ const appRoutes: Routes = [
     FooterComponent,
     ResumeComponent,
     LinksComponent,
-    SkillsComponent
+    SkillsComponent,
+    HeaderComponent
   ],
   imports: [
     RouterModule.forRoot(
