@@ -1,3 +1,12 @@
+.tab-item-container {
+    padding: 12px 0 12px 0;
+    cursor: pointer;
+}
+
+.mobile-tab-item-container {
+    border-bottom: 1px solid #999;
+}
+
 .tab-item {
     color: #999;
     font-size: 16px;

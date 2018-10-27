@@ -1,17 +1,29 @@
-import { Component, OnInit, ViewEncapsulation, Input } from '@angular/core';
+import { Component, OnInit, ViewEncapsulation, Input, Output, EventEmitter } from '@angular/core';
+import { RouterLinkActive } from '@angular/router';
+
 import { Tab } from '../../../models/tab.model';
 
 @Component({
   selector: 'gavin-tab',
   templateUrl: './tab.component.html',
   styleUrls: ['./tab.component.css'],
-  encapsulation: ViewEncapsulation.None
+  encapsulation: ViewEncapsulation.None,
+  providers: [RouterLinkActive]
 })
 export class TabComponent implements OnInit {
+  @Input() expand: boolean;
   @Input() tab: Tab;
+  @Input() mobile: boolean;
+  @Output() tabClicked = new EventEmitter<boolean>();
+  hide = true;
 
-  constructor() { }
+  constructor(private routerLinkActive: RouterLinkActive) { }
 
-  ngOnInit() { }
+  ngOnInit() {
+  }
+
+  onClick(isActiveTab: boolean) {
+    this.tabClicked.emit(isActiveTab);
+  }
 
 }

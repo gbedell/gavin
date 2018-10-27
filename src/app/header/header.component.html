@@ -6,9 +6,17 @@
 
   </div>
 
-  <div class="tabs-container">
+  <div class="tabs-container" [ngClass]="{'mobile-tabs': mobile}" >
 
-    <gavin-tab *ngFor="let tab of tabs" [tab]="tab"></gavin-tab>
+    <gavin-tab 
+      *ngFor="let tab of tabs"
+      [expand]="mobileTabsExpanded"
+      [mobile]="mobile"
+      [tab]="tab"
+      [routerLink]="tab.route"
+      routerLinkActive
+      (tabClicked)="onTabClick($event)">
+    </gavin-tab>
 
   </div>
 

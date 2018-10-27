@@ -12,8 +12,11 @@ import { Tab } from '../../models/tab.model';
   encapsulation: ViewEncapsulation.None
 })
 export class HeaderComponent implements OnInit {
+  activeTab: Tab;
+  mobile = false;
   myName: String;
   tabs: Tab[];
+  mobileTabsExpanded = false;
 
   constructor(
     private router: Router,
@@ -21,12 +24,19 @@ export class HeaderComponent implements OnInit {
     private meService: MeService) { }
 
   ngOnInit() {
+    if (window.screen.width < 500) {
+      this.mobile = true;
+    }
     this.myName = this.meService.getMyName();
     this.tabs = this.tabService.getTabs();
   }
 
   goToHome() {
     this.router.navigate(['home']);
+  }
+
+  onTabClick(isActiveTabClicked: boolean) {
+    this.mobileTabsExpanded = !this.mobileTabsExpanded;
   }
 
 }
