@@ -1,5 +1,6 @@
 .header-container {
-    display: column;
+    display: flex;
+    flex-direction: column;
     margin: 36px 0 36px 0
 }
 

@@ -1,21 +1,2 @@
-<div class="skills-container">
+<p *ngFor="let skill of skills" class="skill">{{ skill }}</p>
 
-  <div class="skills-wrapper">
-
-    <p class="no-margin">{{ everydaySkillsHeading | uppercase }}</p>
-    <ul>
-      <li *ngFor="let skill of mainSkills">{{ skill }}</li>
-    </ul>
-
-  </div>
-
-  <div class="skills-wrapper">
-
-    <p class="no-margin">{{ experiencedSkillsHeading | uppercase }}</p>
-    <ul>
-        <li *ngFor="let skill of otherSkills">{{ skill }}</li>
-      </ul>
-
-  </div>
-
-</div>

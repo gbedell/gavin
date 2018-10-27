@@ -1,7 +1,9 @@
-<div class="education-container line-height-expanded">
+<div class="education-container">
 
-  <p class="education-degree no-margin">{{ education.degreeName | uppercase }} </p>
+  <p class="education-degree no-margin">{{ education.degreeName }} </p>
 
-  <p class="bold no-margin">{{ education.institution }}, {{ dateStarted }} - {{ dateCompleted }}</p>
+  <p class="no-margin">{{ education.institution }}</p>
+  
+  <p class="no-margin">{{ dateStarted }} - {{ dateCompleted }}</p>
 
 </div>

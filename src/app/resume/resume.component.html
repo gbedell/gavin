@@ -1,10 +1,8 @@
 <div class="resume-container">
 
-  <div class="resume-content-container">
+  <div class="resume-work-wrapper">
 
-    <div class="gavin-tab-page-subheading resume-header">Work Experience</div>
-
-    <div class="resume-content-wrapper">
+    <div class="resume-work-container">
 
       <gavin-work *ngFor="let work of workHistory" [work]="work"></gavin-work>
 
@@ -12,25 +10,30 @@
 
   </div>
 
-  <div class="resume-content-container">
+  <div class="resume-other-wrapper">
 
-    <div class="gavin-tab-page-subheading resume-header">Education</div>
+    <div class="resume-other-container">
 
-    <div class="resume-content-wrapper">
+      <div>
 
-      <gavin-education *ngFor="let education of educationHistory" [education]="education"></gavin-education>
+        <p class="bold resume-other-heading underline">EDUCATION</p>
+        <gavin-education *ngFor="let education of educationHistory" [education]="education"></gavin-education>
 
-    </div>
+      </div>
 
-  </div>
+      <div>
 
-  <div class="resume-content-container">
+        <p class="bold resume-other-heading underline">EVERYDAY SKILLS</p>
+        <gavin-skills [skills]="mainSkills"></gavin-skills>
 
-    <div class="gavin-tab-page-subheading resume-header">Skills</div>
+      </div>
 
-    <div class="resume-content-wrapper">
+      <div>
 
-      <gavin-skills [mainSkills]="mainSkills" [otherSkills]="otherSkills"></gavin-skills>
+        <p class="bold resume-other-heading underline">FAMILIAR WITH</p>
+        <gavin-skills [skills]="otherSkills"></gavin-skills>
+
+      </div>
 
     </div>
 

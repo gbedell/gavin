@@ -1,15 +1,13 @@
 <div class="work-container">
 
-  <p class="titles">
-    {{ work.title | uppercase }}
-  </p>
+  <div class="work-heading">
 
-  <p class="bold no-margin line-height-expanded">
+    <p class="bold no-margin">{{ work.title | uppercase}}</p>
 
-    {{ work.employer }}, {{ work.location }}, {{ startDate }} - {{ endDate }}
+    <p class="no-margin light"> at {{ work.employer }} from {{ startDate }} to {{ endDate }}</p>
 
-  </p>
+  </div>
 
-  <p class="no-margin line-height-expanded light">{{ work.description }}</p>
+  <p class="no-margin line-height-expanded">{{ work.description }}</p>
 
 </div>

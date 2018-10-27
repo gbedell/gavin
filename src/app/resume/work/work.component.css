@@ -1,14 +1,9 @@
 .work-container {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    margin: 0 0 24px 0;
+    flex-direction: column;
+    margin: 0 0 36px 0;
 }
 
-.titles {
-    margin: 0 0 14px 0;
+.work-heading {
+    margin: 0 0 12px 0;
 }

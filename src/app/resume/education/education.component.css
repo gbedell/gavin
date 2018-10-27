@@ -1,3 +1,7 @@
 .education-container {
-    margin-bottom: 24px;
+    margin-bottom: 12px;
+}
+
+.education-degree {
+    font-weight: 700;
 }
