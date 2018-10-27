@@ -24,7 +24,7 @@ export class HeaderComponent implements OnInit {
     private meService: MeService) { }
 
   ngOnInit() {
-    if (window.screen.width < 500) {
+    if (window.screen.width < 375) {
       this.mobile = true;
     }
     this.myName = this.meService.getMyName();
@@ -36,7 +36,9 @@ export class HeaderComponent implements OnInit {
   }
 
   onTabClick(isActiveTabClicked: boolean) {
-    this.mobileTabsExpanded = !this.mobileTabsExpanded;
+    if (this.mobile) {
+      this.mobileTabsExpanded = !this.mobileTabsExpanded;
+    }
   }
 
 }
