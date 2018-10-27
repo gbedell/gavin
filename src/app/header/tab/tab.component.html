@@ -1,10 +1,10 @@
 <div 
-    *ngIf="!mobile || routerLinkActive.isActive || expand"
+    *ngIf="!mobile || active || expand"
     class="tab-item-container" 
     [ngClass]="{ 'mobile-tab-item-container': mobile }"
-    (click)="onClick(routerLinkActive.isActive)">
+    (click)="onClick(active)">
 
-    <a class="tab-item" [ngClass]="{ 'tab-item-selected': routerLinkActive.isActive }">
+    <a class="tab-item" [ngClass]="{ 'tab-item-selected': active }">
         {{ tab.displayName }}
     </a>
 

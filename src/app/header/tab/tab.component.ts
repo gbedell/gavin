@@ -1,5 +1,5 @@
 import { Component, OnInit, ViewEncapsulation, Input, Output, EventEmitter } from '@angular/core';
-import { RouterLinkActive } from '@angular/router';
+import { Router } from '@angular/router';
 
 import { Tab } from '../../../models/tab.model';
 
@@ -7,8 +7,7 @@ import { Tab } from '../../../models/tab.model';
   selector: 'gavin-tab',
   templateUrl: './tab.component.html',
   styleUrls: ['./tab.component.css'],
-  encapsulation: ViewEncapsulation.None,
-  providers: [RouterLinkActive]
+  encapsulation: ViewEncapsulation.None
 })
 export class TabComponent implements OnInit {
   @Input() expand: boolean;
@@ -16,14 +15,25 @@ export class TabComponent implements OnInit {
   @Input() mobile: boolean;
   @Output() tabClicked = new EventEmitter<boolean>();
   hide = true;
+  active = false;
 
-  constructor(private routerLinkActive: RouterLinkActive) { }
+  constructor(private router: Router) { }
 
   ngOnInit() {
+    this.router.events.subscribe((event) => {
+      this.active = false;
+      if (event['url'] === this.formatTabRoute(this.tab.route)) {
+        this.active = !this.active;
+      }
+    });
   }
 
   onClick(isActiveTab: boolean) {
     this.tabClicked.emit(isActiveTab);
+  }
+
+  private formatTabRoute(tabRoute: String) {
+    return '/' + tabRoute;
   }
 
 }
