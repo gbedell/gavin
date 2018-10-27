@@ -8,15 +8,13 @@ import { HomeComponent } from './home/home.component';
 import { MeComponent } from './me/me.component';
 import { EducationComponent } from './resume/education/education.component';
 import { WorkComponent } from './resume/work/work.component';
-import { TabsComponent } from './tabs/tabs.component';
-import { TabComponent } from './tabs/tab/tab.component';
-import { TabsDropdownComponent } from './tabs-dropdown/tabs-dropdown.component';
-import { DropdownItemComponent } from './tabs-dropdown/dropdown-item/dropdown-item.component';
+import { TabComponent } from './header/tab/tab.component';
 import { FooterComponent } from './footer/footer.component';
 import { ResumeComponent } from './resume/resume.component';
 import { LinksComponent } from './links/links.component';
 import { SharedModule } from './shared/shared.module';
 import { SkillsComponent } from './resume/skills/skills.component';
+import { HeaderComponent } from './header/header.component';
 
 const appRoutes: Routes = [
   {
@@ -54,14 +52,12 @@ const appRoutes: Routes = [
     MeComponent,
     EducationComponent,
     WorkComponent,
-    TabsComponent,
     TabComponent,
-    TabsDropdownComponent,
-    DropdownItemComponent,
     FooterComponent,
     ResumeComponent,
     LinksComponent,
-    SkillsComponent
+    SkillsComponent,
+    HeaderComponent
   ],
   imports: [
     RouterModule.forRoot(

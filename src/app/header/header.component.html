@@ -1,0 +1,23 @@
+<div class="header-container">
+
+  <div class="header-name-container">
+
+    <span id="header-name" (click)="goToHome()">{{ myName }}</span>
+
+  </div>
+
+  <div class="tabs-container" [ngClass]="{'mobile-tabs': mobile}" >
+
+    <gavin-tab 
+      *ngFor="let tab of tabs"
+      [expand]="mobileTabsExpanded"
+      [mobile]="mobile"
+      [tab]="tab"
+      [routerLink]="tab.route"
+      routerLinkActive
+      (tabClicked)="onTabClick($event)">
+    </gavin-tab>
+
+  </div>
+
+</div>
