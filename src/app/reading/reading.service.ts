@@ -7,7 +7,7 @@ export class ReadingService {
 
   private readingIntro = `Here are some notable books that I've read, with
    the most recent at the beginning. Anything that I've found particularly
-   good or interesting is hightlighed from the others.`;
+   good or interesting is highlighed from the others.`;
 
   private books: Book[] = [
     {
