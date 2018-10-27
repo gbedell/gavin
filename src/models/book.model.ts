@@ -8,6 +8,7 @@ export class Book {
     amazonLink: string;
     dateStarted: Date;
     dateFinished: Date;
+    imageUrl?: String;
 }
 
 

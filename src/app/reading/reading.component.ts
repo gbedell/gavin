@@ -43,4 +43,8 @@ export class ReadingComponent implements OnInit {
     );
   }
 
+  getImage(book: Book) {
+    return 'assets/books/' + book.imageUrl;
+  }
+
 }

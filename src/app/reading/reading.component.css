@@ -10,10 +10,21 @@
 
 .books-container {
     display: flex;
-    flex-direction: column;
-    justify-content: center;
+    flex-flow: row wrap;
+    justify-content: space-between;
 }
 
-.book-container {
-    margin-bottom: 12px;
+.book-image {
+    width: 116px;
+    height: 176px;
+    margin-bottom: 24px;
+    opacity: 0.5;
+}
+
+.book-image:hover {
+    opacity: .75;
+}
+
+.recommended-book {
+    opacity: 1;
 }

@@ -10,15 +10,13 @@
 
   </div>
 
-  <div *ngIf="hasBooks()" class="books-container">
+  <div class="books-container">
 
-    <p *ngFor="let book of books" class="book-container no-margin light">
+    <a *ngFor="let book of books" class="book-link" href="{{ book.amazonLink }}" target="_blank">
 
-      <span [ngClass]="{'bold': book.recommend}">{{book.title}}</span><span> -
-        {{book.author}}
-      </span>
+      <img class="book-image" [ngClass]="{ 'recommended-book': book.recommend }" [src]="getImage(book)" alt="{{ book.title }}">
 
-    </p>
+    </a>
 
   </div>
 

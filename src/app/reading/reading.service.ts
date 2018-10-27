@@ -5,9 +5,9 @@ import { Book } from '../../models/book.model';
 @Injectable()
 export class ReadingService {
 
-  private readingIntro = `Here is a list of books I've read -
-   starting with the most recent. Anything that I've found
-   particularly good or interesting is bolded.`;
+  private readingIntro = `Here are some notable books that I've read, with
+   the most recent at the beginning. Anything that I've found particularly
+   good or interesting is hightlighed from the others.`;
 
   private books: Book[] = [
     {
@@ -18,7 +18,8 @@ export class ReadingService {
       amazonLink: `https://www.amazon.com/Creative-Selection-
       Inside-Apples-Process/dp/1250194466`,
       dateStarted: null,
-      dateFinished: new Date(2018, 9, 7)
+      dateFinished: new Date(2018, 9, 7),
+      imageUrl: 'creativeSelection.jpg'
     },
     {
       title: 'Measure What Matters',
@@ -26,7 +27,8 @@ export class ReadingService {
       recommend: true,
       amazonLink: 'http://a.co/d/cPIIclZ',
       dateStarted: null,
-      dateFinished: new Date(2018, 8, 27)
+      dateFinished: new Date(2018, 8, 27),
+      imageUrl: 'measureWhatMatters.jpg'
     },
     {
       title: `When the Wolves Bite: Two Billionaires, One Company
@@ -35,7 +37,8 @@ export class ReadingService {
       recommend: false,
       amazonLink: 'http://a.co/d/7b6hQjV',
       dateStarted: null,
-      dateFinished: new Date(2018, 8, 18)
+      dateFinished: new Date(2018, 8, 18),
+      imageUrl: 'whenTheWolvesBite.jpg'
     },
     {
       title: `The Spider Network: The Wild Story of a Math Genius, a
@@ -45,7 +48,8 @@ export class ReadingService {
       recommend: false,
       amazonLink: 'http://a.co/d/epfWMIk',
       dateStarted: null,
-      dateFinished: new Date(2018, 7, 21)
+      dateFinished: new Date(2018, 7, 21),
+      imageUrl: 'theSpiderNetwork.jpg'
     },
     {
       title: `Accelerate: Building and Scaling High-Performing
@@ -54,7 +58,8 @@ export class ReadingService {
       recommend: false,
       amazonLink: 'http://a.co/d/hUMmFYy',
       dateStarted: null,
-      dateFinished: new Date(2018, 7, 12)
+      dateFinished: new Date(2018, 7, 12),
+      imageUrl: 'accelerate.jpg'
     },
     {
       title: `The Innovator's Dilemma: The Revolutionary Book
@@ -63,7 +68,8 @@ export class ReadingService {
       recommend: true,
       amazonLink: 'http://a.co/d/hKtJVem',
       dateStarted: null,
-      dateFinished: new Date(2018, 7, 8)
+      dateFinished: new Date(2018, 7, 8),
+      imageUrl: 'innovatorsDilemma.jpg'
     },
     {
       title: `Longitude: The True Story of a Lone Genius Who
@@ -72,7 +78,8 @@ export class ReadingService {
       recommend: true,
       amazonLink: 'http://a.co/d/eAeXPaN',
       dateStarted: null,
-      dateFinished: new Date(2018, 7, 8)
+      dateFinished: new Date(2018, 7, 8),
+      imageUrl: 'longitude.jpg'
     },
     {
       title: 'Thinking, Fast and Slow',
@@ -80,7 +87,8 @@ export class ReadingService {
       recommend: true,
       amazonLink: 'http://a.co/gbBADbn',
       dateStarted: new Date(2018, 5, 26),
-      dateFinished: new Date(2018, 6, 4)
+      dateFinished: new Date(2018, 6, 4),
+      imageUrl: 'thinkingFastAndSlow.jpg'
     },
     {
       title: 'Tiger Woods',
@@ -88,7 +96,8 @@ export class ReadingService {
       recommend: true,
       amazonLink: 'http://a.co/d/bCrGxrx',
       dateStarted: new Date(2018, 5, 13),
-      dateFinished: new Date(2018, 5, 27)
+      dateFinished: new Date(2018, 5, 27),
+      imageUrl: 'tigerWoods.jpg'
     },
     {
       title: `Skin in the Game: The Hidden Asymmetries
@@ -97,7 +106,8 @@ export class ReadingService {
       recommend: false,
       amazonLink: 'http://a.co/d/e5gzGce',
       dateStarted: new Date(2018, 5, 5),
-      dateFinished: new Date(2018, 5, 29)
+      dateFinished: new Date(2018, 5, 29),
+      imageUrl: 'skinInTheGame.jpg'
     },
     {
       title: `Built to Last: Successful Habits of
@@ -106,7 +116,8 @@ export class ReadingService {
       recommend: false,
       amazonLink: 'http://a.co/d/ip0BDa6',
       dateStarted: new Date(2018, 4, 14),
-      dateFinished: new Date(2018, 4, 28)
+      dateFinished: new Date(2018, 4, 28),
+      imageUrl: 'builtToLast.jpg'
     },
     {
       title: 'Thomas Jefferson and the Tripoli Pirates',
@@ -114,7 +125,8 @@ export class ReadingService {
       recommend: false,
       amazonLink: 'http://a.co/d/crQmXD7',
       dateStarted: null,
-      dateFinished: new Date(2018, 5, 21)
+      dateFinished: new Date(2018, 5, 21),
+      imageUrl: 'tripoliPirates.jpg'
     },
     {
       title: 'Bad Blood: Secrets and Lies in a Silicon Valley Startup',
@@ -123,6 +135,7 @@ export class ReadingService {
       amazonLink: 'http://a.co/d/dMiP8wM',
       dateStarted: new Date(2018, 5, 8),
       dateFinished: new Date(2018, 5, 22),
+      imageUrl: 'badBlood.jpg'
     },
     {
       title: 'Principles',
@@ -130,7 +143,8 @@ export class ReadingService {
       recommend: true,
       amazonLink: 'http://a.co/0HI7ahX',
       dateStarted: new Date(2018, 0, 1),
-      dateFinished: new Date(2018, 0, 14)
+      dateFinished: new Date(2018, 0, 14),
+      imageUrl: 'principles.jpg'
     },
     {
       title: `The Lean Startup: How Today's Entrepreneurs Use
@@ -140,7 +154,8 @@ export class ReadingService {
       recommend: false,
       amazonLink: 'http://a.co/d/aePhTLO',
       dateStarted: new Date(2016, 7, 30),
-      dateFinished: new Date(2016, 8, 21)
+      dateFinished: new Date(2016, 8, 21),
+      imageUrl: 'leanStartup.jpg'
     }
   ];
 
