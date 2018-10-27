@@ -1,6 +1,0 @@
-.tabs-container {
-    display: flex;
-    flex-flow: row wrap;
-    margin-bottom: 48px;
-    justify-content: space-between;
-}
