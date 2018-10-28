@@ -20,3 +20,16 @@
 .tab-item-selected {
     color: black !important;
 }
+
+.tab-item-contents-container {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.dropdown-caret {
+    width: 16px;
+    height: 16px;
+    padding-left: 16px;
+}

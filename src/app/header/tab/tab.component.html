@@ -1,11 +1,16 @@
-<div 
-    *ngIf="!mobile || active || expand"
-    class="tab-item-container" 
-    [ngClass]="{ 'mobile-tab-item-container': mobile }"
+<div *ngIf="!mobile || active || expand" class="tab-item-container" [ngClass]="{ 'mobile-tab-item-container': mobile }"
     (click)="onClick(active)">
 
     <a class="tab-item" [ngClass]="{ 'tab-item-selected': active }">
-        {{ tab.displayName }}
+
+        <div class="tab-item-contents-container">
+
+            <p class="no-margin">{{ tab.displayName }}</p>
+
+            <img *ngIf="mobile && active && !expand" class="dropdown-caret" [src]="'assets/down-arrow-black-thin.png'">
+
+        </div>
+
     </a>
 
 </div>
