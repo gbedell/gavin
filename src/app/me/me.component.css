@@ -8,6 +8,22 @@
     text-align: center;
 }
 
+.about-me-social-links-container {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    margin-bottom: 24px;
+}
+
+.social-link-container {
+    margin: 0 8px 0 8px;
+}
+
+.social-image {
+    width: 24px;
+    height: 24px;
+}
+
 #about-me-headshot {
     width: 156px;
     height: auto;
