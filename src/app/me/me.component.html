@@ -6,6 +6,20 @@
 
   </div>
 
+  <div class="about-me-social-links-container">
+
+    <div *ngFor="let social of socialLinks" class="social-link-container">
+
+      <a href="{{ social.url }}" target="_blank">
+
+        <img class="social-image" src="{{ social.imageUrl }}">
+
+      </a>
+
+    </div>
+
+  </div>
+
   <div class="line-height-expanded light">
 
     {{ description }}

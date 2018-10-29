@@ -11,4 +11,6 @@
 #home-image {
     height: 100%;
     width: 100%;
+    max-width: 375px;
+    max-height: 375px;
 }
