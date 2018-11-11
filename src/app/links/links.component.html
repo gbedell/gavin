@@ -2,13 +2,13 @@
 
   <div class="links-header-container">
 
-    <p class="no-margin line-height-expanded">
+    <p class="no-margin">
       {{ intro }}
     </p>
 
   </div>
 
-  <div *ngFor="let link of links" class="link light">
+  <div *ngFor="let link of links" class="link">
 
     <a href="{{ link.url }}" target="_blank">{{ link.displayName }}</a>
 

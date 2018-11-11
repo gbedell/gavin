@@ -156,6 +156,18 @@ export class ReadingService {
       dateStarted: new Date(2016, 7, 30),
       dateFinished: new Date(2016, 8, 21),
       imageUrl: 'leanStartup.jpg'
+    },
+    {
+      title: `Tools of Titans: The Tactics,
+       Routines, and Habits of Billionaires,
+        Icons, and World-Class Performers`,
+      author: 'Tim Ferris',
+      recommend: false,
+      amazonLink: 'http://a.co/d/cWRcL4u',
+      dateStarted: null,
+      dateFinished: new Date(2018, 10, 1),
+      imageUrl: 'toolsOfTitans.jpg'
+
     }
   ];
 

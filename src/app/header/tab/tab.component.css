@@ -19,6 +19,7 @@
 
 .tab-item-selected {
     color: black !important;
+    font-weight: 700;
 }
 
 .tab-item-contents-container {
