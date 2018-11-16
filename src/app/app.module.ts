@@ -15,6 +15,8 @@ import { LinksComponent } from './links/links.component';
 import { SharedModule } from './shared/shared.module';
 import { SkillsComponent } from './resume/skills/skills.component';
 import { HeaderComponent } from './header/header.component';
+import { ClarityModule } from '@clr/angular';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 const appRoutes: Routes = [
   {
@@ -65,7 +67,9 @@ const appRoutes: Routes = [
       { enableTracing: false },
     ),
     BrowserModule,
-    SharedModule
+    SharedModule,
+    ClarityModule,
+    BrowserAnimationsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
