@@ -1,17 +1,8 @@
-.reading-container {
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-}
-
-.reading-intro-container {
-    margin-bottom: 24px;
-}
-
 .books-container {
     display: flex;
     flex-flow: row wrap;
     justify-content: space-evenly;
+    margin-top: 24px;
 }
 
 .book-image {

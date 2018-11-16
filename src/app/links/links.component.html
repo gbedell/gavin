@@ -1,4 +1,4 @@
-<div class="links-container">
+<!-- <div class="links-container">
 
   <div class="links-header-container">
 
@@ -8,11 +8,18 @@
 
   </div>
 
-  <div *ngFor="let link of links" class="link">
+  <a *ngFor="let link of links" href="{{ link.url }}" target="_blank">{{ link.displayName }}</a>
 
+</div> -->
+
+<h2>Links</h2>
+
+<p>{{ intro }}</p>
+
+<div class="links">
+
+  <div *ngFor="let link of links">
     <a href="{{ link.url }}" target="_blank">{{ link.displayName }}</a>
-
   </div>
-
 
 </div>

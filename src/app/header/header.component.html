@@ -1,22 +1,16 @@
-<div class="header-container">
+<clr-header class="header header-5">
 
-  <div class="header-name-container">
+  <div class="branding">
+    <a routerLink="/home" class="nav-link">
+      <span class="title">Gavin Bedell</span>
+    </a>
+  </div>
 
-    <span id="header-name" (click)="goToHome()">{{ myName }}</span>
+  <div class="header-nav" [clr-nav-level]="1">
+
+    <a *ngFor="let tab of tabs" [routerLink]="tab.route" routerLinkActive="active" class="nav-link"><span class="nav-text">{{
+        tab.displayName }}</span></a>
 
   </div>
 
-  <div class="tabs-container" [ngClass]="{'mobile-tabs': mobile}" >
-
-    <gavin-tab 
-      *ngFor="let tab of tabs"
-      [expand]="mobileTabsExpanded"
-      [mobile]="mobile"
-      [tab]="tab"
-      [routerLink]="tab.route"
-      (tabClicked)="onTabClick($event)">
-    </gavin-tab>
-
-  </div>
-
-</div>
+</clr-header>

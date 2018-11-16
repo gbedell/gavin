@@ -8,7 +8,6 @@ import { HomeComponent } from './home/home.component';
 import { MeComponent } from './me/me.component';
 import { EducationComponent } from './resume/education/education.component';
 import { WorkComponent } from './resume/work/work.component';
-import { TabComponent } from './header/tab/tab.component';
 import { FooterComponent } from './footer/footer.component';
 import { ResumeComponent } from './resume/resume.component';
 import { LinksComponent } from './links/links.component';
@@ -54,7 +53,6 @@ const appRoutes: Routes = [
     MeComponent,
     EducationComponent,
     WorkComponent,
-    TabComponent,
     FooterComponent,
     ResumeComponent,
     LinksComponent,
