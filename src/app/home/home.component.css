@@ -1,13 +1,3 @@
-.home-container {
-    display: flex;
-    flex-direction: column;
-}
-
-.home-image-container {
-    display: flex;
-    justify-content: center;
-}
-
 #home-image {
     height: 100%;
     width: 100%;

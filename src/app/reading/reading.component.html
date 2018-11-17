@@ -1,17 +1,24 @@
-<div class="reading-container">
+<h2>Bookshelf</h2>
 
-  <h2>Bookshelf</h2>
+<div class="clr-row">
 
-  <p>{{readingInfo}}</p>
+  <div class="clr-col-sm-12 clr-col-lg-4">
 
+    <p>{{ readingInfo }}</p>
 
-  <div class="books-container">
+  </div>
 
-    <a *ngFor="let book of books" class="book-link" href="{{ book.amazonLink }}" target="_blank">
+  <div class="clr-col-sm-12 clr-col-lg-8 books-container">
 
-      <img class="book-image" [ngClass]="{ 'recommended-book': book.recommend }" [src]="getImage(book)" alt="{{ book.title }}">
+    <div *ngFor="let book of books" class="book">
 
-    </a>
+      <a href="{{ book.amazonLink }}" target="_blank">
+
+        <img class="book-image" [ngClass]="{ 'recommended-book': book.recommend }" [src]="getImage(book)" alt="{{ book.title }}">
+
+      </a>
+
+    </div>
 
   </div>
 
