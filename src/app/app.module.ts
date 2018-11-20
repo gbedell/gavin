@@ -8,7 +8,6 @@ import { HomeComponent } from './home/home.component';
 import { MeComponent } from './me/me.component';
 import { EducationComponent } from './resume/education/education.component';
 import { WorkComponent } from './resume/work/work.component';
-import { FooterComponent } from './footer/footer.component';
 import { ResumeComponent } from './resume/resume.component';
 import { LinksComponent } from './links/links.component';
 import { SharedModule } from './shared/shared.module';
@@ -53,7 +52,6 @@ const appRoutes: Routes = [
     MeComponent,
     EducationComponent,
     WorkComponent,
-    FooterComponent,
     ResumeComponent,
     LinksComponent,
     SkillsComponent,
