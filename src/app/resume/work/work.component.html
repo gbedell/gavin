@@ -1,13 +1,23 @@
-<div class="work-container">
-
-  <div class="work-heading">
-
-    <h2 class="no-margin">{{ work.title | uppercase}}</h2>
-
-    <p class="no-margin"> at {{ work.employer }} from {{ startDate }} to {{ endDate }}</p>
-
-  </div>
-
-  <p class="no-margin">{{ work.description }}</p>
+<div class="card">
+    
+    <div class="card-header">
+        {{ work.title }}
+    </div>
+    
+    <div class="card-block">
+        
+        <div class="card-title">
+            {{ work.employer }}
+        </div>
+        
+        <div class="card-text">
+            {{ work.description }}
+        </div>
+    
+    </div>
+    
+    <div class="card-footer">
+        {{ startDate }} to {{ endDate }}
+    </div>
 
 </div>

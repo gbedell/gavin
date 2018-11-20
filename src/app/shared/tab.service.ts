@@ -7,23 +7,19 @@ export class TabService {
 
     private tabs: Tab[] = [
         {
-            displayName: 'HOME',
-            route: 'home'
-        },
-        {
-            displayName: 'ABOUT',
+            displayName: 'About Me',
             route: 'me'
         },
         {
-            displayName: 'RESUME',
+            displayName: 'Resume',
             route: 'resume'
         },
         {
-            displayName: 'BOOKSHELF',
+            displayName: 'Bookshelf',
             route: 'bookshelf'
         },
         {
-            displayName: 'LINKS',
+            displayName: 'Links',
             route: 'links'
         }
     ];

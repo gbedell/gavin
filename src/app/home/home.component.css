@@ -1,16 +1,6 @@
-.home-container {
-    display: flex;
-    flex-direction: column;
-}
-
-.home-image-container {
-    display: flex;
-    justify-content: center;
-}
-
-#home-image {
+.home {
     height: 100%;
     width: 100%;
-    max-width: 375px;
-    max-height: 375px;
+    background: url('assets/manhattan.jpg');
+    background-size: cover;
 }

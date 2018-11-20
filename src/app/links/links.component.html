@@ -1,18 +1,21 @@
-<div class="links-container">
+<h2>Links</h2>
 
-  <div class="links-header-container">
+<div class="clr-row">
 
-    <p class="no-margin">
-      {{ intro }}
-    </p>
+  <div class="clr-col-sm-12 clr-col-lg-4">
 
-  </div>
-
-  <div *ngFor="let link of links" class="link">
-
-    <a href="{{ link.url }}" target="_blank">{{ link.displayName }}</a>
+    <p>{{ intro }}</p>
 
   </div>
 
+  <div class="clr-col-sm-12 clr-col-lg-8 links">
+
+    <ul class="list">
+
+      <li *ngFor="let link of links"><a href="{{ link.url }}" target="_blank">{{ link.displayName }}</a></li>
+
+    </ul>
+
+  </div>
 
 </div>

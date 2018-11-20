@@ -1,41 +1,26 @@
-<div class="resume-container">
+<h2>Resume</h2>
 
-  <div class="resume-work-wrapper">
+<div class="clr-row">
 
-    <div class="resume-work-container">
+  <div class="clr-col-sm-12 clr-col-md-12 clr-col-lg-6">
 
-      <gavin-work *ngFor="let work of workHistory" [work]="work"></gavin-work>
-
-    </div>
+    <h4>WORK EXPERIENCE</h4>
+    <gavin-work *ngFor="let work of workHistory" [work]="work"></gavin-work>
 
   </div>
 
-  <div class="resume-other-wrapper">
+  <div class="clr-col-sm-12 clr-col-md-6 clr-col-lg-3">
 
-    <div class="resume-other-container">
+    <h4>EDUCATION</h4>
+    <gavin-education *ngFor="let education of educationHistory" [education]="education"></gavin-education>
 
-      <div>
+  </div>
 
-        <h1 class="resume-other-heading">EDUCATION</h1>
-        <gavin-education *ngFor="let education of educationHistory" [education]="education"></gavin-education>
+  <div class="clr-col-sm-12 clr-col-md-6 clr-col-lg-3">
 
-      </div>
-
-      <div>
-
-        <h1 class="resume-other-heading">EVERYDAY SKILLS</h1>
-        <gavin-skills [skills]="mainSkills"></gavin-skills>
-
-      </div>
-
-      <div>
-
-        <h1 class="resume-other-heading">FAMILIAR WITH</h1>
-        <gavin-skills [skills]="otherSkills"></gavin-skills>
-
-      </div>
-
-    </div>
+    <h4>SKILLS</h4>
+    <gavin-skills [header]="'Everyday Use'" [skills]="mainSkills"></gavin-skills>
+    <gavin-skills [header]="'Familiar With'" [skills]="otherSkills"></gavin-skills>
 
   </div>
 

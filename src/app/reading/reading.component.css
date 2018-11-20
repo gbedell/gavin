@@ -1,23 +1,23 @@
-.reading-container {
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-}
-
-.reading-intro-container {
-    margin-bottom: 24px;
-}
-
 .books-container {
     display: flex;
     flex-flow: row wrap;
-    justify-content: space-evenly;
+    justify-content: normal;
+    margin-top: 24px;
+}
+
+@media (max-width: 768px) {
+    .books-container {
+        justify-content: center;
+    }
+}
+
+.book {
+    margin: 0 12px 12px 12px;
 }
 
 .book-image {
     width: 116px;
     height: 176px;
-    margin-bottom: 24px;
     opacity: 0.5;
 }
 

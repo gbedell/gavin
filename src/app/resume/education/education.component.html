@@ -1,9 +1,13 @@
-<div class="education-container">
-
-  <h2 class="no-margin">{{ education.degreeName }}</h2>
-
-  <p class="no-margin">{{ education.institution }}</p>
-  
-  <p class="no-margin">{{ dateStarted }} - {{ dateCompleted }}</p>
-
+<div class="card">
+    <div class="card-header">
+        {{ education.degreeName}}
+    </div>
+    <div class="card-block">
+        <div class="card-title">
+            {{ education.institution }}
+        </div>
+    </div>
+    <div class="card-footer">
+        {{ dateStarted }} - {{ dateCompleted }}
+    </div>
 </div>

@@ -21,10 +21,14 @@
     "@angular/platform-browser": "^7.0.4",
     "@angular/platform-browser-dynamic": "^7.0.4",
     "@angular/router": "^7.0.4",
+    "@clr/angular": "^0.13.10",
     "core-js": "^2.4.1",
     "rxjs": "^6.3.3",
+    "rxjs-compat": "^6.0.0-rc.0",
     "zone.js": "^0.8.14",
-    "rxjs-compat": "^6.0.0-rc.0"
+    "@clr/ui": "^0.13.10",
+    "@clr/icons": "^0.13.10",
+    "@webcomponents/custom-elements": "^1.0.0"
   },
   "devDependencies": {
     "@angular-devkit/build-angular": "~0.10.0",
