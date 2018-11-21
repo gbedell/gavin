@@ -13,12 +13,14 @@ export class MeComponent implements OnInit {
   heading = 'About Me';
   description: String;
   socialLinks: Social[];
+  myName: String;
 
   constructor(private meService: MeService) { }
 
   ngOnInit() {
     this.description = this.meService.getMyDescription();
     this.socialLinks = this.meService.getSocialLinks();
+    this.myName = this.meService.getMyName();
   }
 
 }

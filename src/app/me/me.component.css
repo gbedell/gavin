@@ -1,34 +1,8 @@
-.about-me-container {
-    display: flex;
-    flex-direction: column;
-}
-
-.about-me-image-container {
-    margin-bottom: 24px;
-    text-align: center;
-}
-
-.about-me-social-links-container {
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: center;
-    margin-bottom: 24px;
-}
-
-.social-link-container {
-    margin: 0 8px 0 8px;
+.social-link {
+    padding-right: 0.5rem;
 }
 
 .social-image {
     width: 24px;
     height: 24px;
-}
-
-#about-me-headshot {
-    width: 156px;
-    height: auto;
-}
-
-.description {
-    margin: 0 0 18px 0;
 }
