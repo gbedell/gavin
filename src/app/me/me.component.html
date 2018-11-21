@@ -1,31 +1,61 @@
-<div class="about-me-container">
+<h2>{{ heading }}</h2>
 
-  <h2>About Me</h2>
+<div class="clr-row">
 
-  <div class="about-me-image-container">
+  <div class="clr-col-sm-8 clr-col-md-8 clr-col-lg-8">
 
-    <img id="about-me-headshot" src="assets/headshot.jpg">
+    <div class="card">
 
-  </div>
+      <div class="card-header">
+        {{ myName }}
+      </div>
 
-  <div class="about-me-social-links-container">
+      <div class="card-block">
 
-    <div *ngFor="let social of socialLinks" class="social-link-container">
+        <div class="card-media-block">
 
-      <a href="{{ social.url }}" target="_blank">
+          <img src="assets/headshot.jpg" class="card-media-image">
 
-        <img class="social-image" src="{{ social.imageUrl }}">
+          <div class="card-media-description">
+            <span class="card-media-title">
+              Software Engineer
+            </span>
+            <span class="card-media-text">
+              Dallas, TX
+            </span>
+          </div>
 
-      </a>
+        </div>
+
+        <p class="card-text">{{ description }}</p>
+
+      </div>
 
     </div>
 
   </div>
 
-  <p class="description">
+  <div class="clr-col-sm-4 clr-col-md-4 clr-col-lg-3">
 
-    {{ description }}
+    <div class="card">
 
-  </p>
+      <div class="card-header">
+        Connect With Me
+      </div>
+
+      <ul class="list-group list-group-flush">
+        <li *ngFor="let social of socialLinks" class="list-group-item">
+          <a href="{{ social.url }}" class="social-link">
+            <img class="social-image" src="{{ social.imageUrl }}">
+          </a>
+          <span>
+            {{ social.name }}
+          </span>
+        </li>
+      </ul>
+
+    </div>
+
+  </div>
 
 </div>
