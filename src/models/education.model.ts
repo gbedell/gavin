@@ -7,4 +7,5 @@ export class Education {
     degreeName: string;
     dateStarted: Date;
     dateCompleted: Date;
+    imageUrl?: String;
 }
