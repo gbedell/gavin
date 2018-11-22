@@ -13,6 +13,7 @@ export class ResumeService {
             degreeName: 'Bachelor of Arts, Economics',
             dateStarted: new Date(2009, 7),
             dateCompleted: new Date(2014, 4),
+            imageUrl: 'umd.jpeg'
         },
         {
             institution: 'Udacity',
@@ -20,6 +21,7 @@ export class ResumeService {
             degreeName: 'Artificial Intelligence Nanodegree',
             dateStarted: new Date(2017, 5),
             dateCompleted: new Date(2017, 11),
+            imageUrl: 'udacity.jpeg'
         },
         {
             institution: 'Udacity',
@@ -27,6 +29,7 @@ export class ResumeService {
             degreeName: 'Full Stack Web Developer Nanodegree',
             dateStarted: new Date(2015, 11),
             dateCompleted: new Date(2016, 3),
+            imageUrl: 'udacity.jpeg'
         },
         {
             institution: 'Udacity',
@@ -34,6 +37,7 @@ export class ResumeService {
             degreeName: 'Intro to Programming Nanodegree',
             dateStarted: new Date(2015, 8),
             dateCompleted: new Date(2015, 10),
+            imageUrl: 'udacity.jpeg'
         }
     ];
 
@@ -44,23 +48,6 @@ export class ResumeService {
             location: 'Dallas, TX',
             startDate: new Date(2016, 5),
             endDate: null,
-            jobs: [
-                {
-                    title: 'Sr Specialist-Software Engineer',
-                    startDate: new Date(2017, 11),
-                    endDate: null
-                },
-                {
-                    title: 'Associate-Applications Developer',
-                    startDate: new Date(2016, 8),
-                    endDate: new Date(2017, 11)
-                },
-                {
-                    title: 'Technical Intern',
-                    startDate: new Date(2016, 5),
-                    endDate: new Date(2016, 7)
-                }
-            ],
             description: `Currently, I am a Software Engineer supporting AT&T's Capabilities
              Evolution - the business unit responsible for all learning, training, and
              skills development within the company. In my role, I am a part of an Agile team
@@ -69,7 +56,8 @@ export class ResumeService {
              our REST API, which we use to serve clients throughout our application
              ecosystem. Moreover, I have an active role in our application archicture,
              deployment process, and requirements planning.`,
-            title: 'Software Engineer'
+            title: 'Software Engineer',
+            imageUrl: 'att_globe.jpg'
         },
         {
             employer: 'RainKing Solutions',
@@ -77,23 +65,6 @@ export class ResumeService {
             location: 'Bethesda, MD',
             startDate: new Date(2014, 5),
             endDate: new Date(2016, 4),
-            jobs: [
-                {
-                    title: 'Senior Research Operations Analyst',
-                    startDate: new Date(2015, 9),
-                    endDate: new Date(2016, 4)
-                },
-                {
-                    title: 'Research Operations Analyst',
-                    startDate: new Date(2015, 2),
-                    endDate: new Date(2015, 9)
-                },
-                {
-                    title: 'Research Intern',
-                    startDate: new Date(2014, 5),
-                    endDate: new Date(2015, 2)
-                }
-            ],
             description: `While at RainKing - an enterprise software company that offered
              sales intelligence through its web application - I worked on the Research Operations
              team, primarily tasked with evaluating existing workflows for opportunities for
@@ -102,7 +73,8 @@ export class ResumeService {
              our data scrubbing process from manual data entry to automated Excel macros.
              Consequently, our data collection productivity increased 10x while simultaneously
              improving data quality for our customers.`,
-            title: 'Operations Analyst'
+            title: 'Operations Analyst',
+            imageUrl: 'rainking.jpeg'
         },
     ];
 
