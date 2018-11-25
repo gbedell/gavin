@@ -1,6 +1,28 @@
-.home {
-    height: 100%;
-    width: 100%;
-    background: url('assets/manhattan.jpg');
-    background-size: cover;
+.container {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+    height: 564px;
+}
+
+#home-image {
+    width: 154px;
+    height: 186px;
+}
+
+@media only screen and (max-width: 575px) {
+    #home-image {
+        width: 92px;
+        height: 111px;
+    }
+}
+
+.item {
+    flex: 0 1 auto;
+    padding: 0 12px 0 12px;
+}
+
+.item > h1 {
+    font-size:64px;
 }
