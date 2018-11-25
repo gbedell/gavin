@@ -3,11 +3,20 @@
         {{ education.degreeName}}
     </div>
     <div class="card-block">
-        <div class="card-title">
-            {{ education.institution }}
+
+        <div class="card-media-block">
+
+            <img src="assets/{{ education.imageUrl }}" class="card-media-image">
+
+            <div class="card-media-description">
+                <span class="card-media-title">
+                    {{ education.institution }}
+                </span>
+                <span class="card-media-text">
+                    {{ dateStarted }} - {{ dateCompleted }}
+                </span>
+            </div>
+
         </div>
-    </div>
-    <div class="card-footer">
-        {{ dateStarted }} - {{ dateCompleted }}
     </div>
 </div>

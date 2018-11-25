@@ -1,23 +1,33 @@
 <div class="card">
-    
+
     <div class="card-header">
         {{ work.title }}
     </div>
-    
+
     <div class="card-block">
-        
-        <div class="card-title">
-            {{ work.employer }}
+
+        <div class="card-media-block">
+
+            <img src="assets/{{ work.imageUrl }}" class="card-media-image">
+
+            <div class="card-media-description">
+                <span class="card-media-title">
+                    {{ work.employer }}
+                </span>
+                <span class="card-media-text">
+                    {{ work.location }}
+                </span>
+                <span class="card-media-text">
+                    {{ startDate }} to {{ endDate }}
+                </span>
+            </div>
+
         </div>
-        
+
         <div class="card-text">
             {{ work.description }}
         </div>
-    
-    </div>
-    
-    <div class="card-footer">
-        {{ startDate }} to {{ endDate }}
+
     </div>
 
 </div>
