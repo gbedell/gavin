@@ -11,16 +11,16 @@ import { Social } from '../../models/social.model';
 })
 export class MeComponent implements OnInit {
   heading = 'About Me';
-  description: String;
   socialLinks: Social[];
   myName: String;
+  descriptions: String[] = [];
 
   constructor(private meService: MeService) { }
 
   ngOnInit() {
-    this.description = this.meService.getMyDescription();
     this.socialLinks = this.meService.getSocialLinks();
     this.myName = this.meService.getMyName();
+    this.descriptions = this.meService.getDescriptions();
   }
 
 }

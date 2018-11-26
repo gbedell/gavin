@@ -48,14 +48,22 @@ export class ResumeService {
             location: 'Dallas, TX',
             startDate: new Date(2016, 5),
             endDate: null,
-            description: `Currently, I am a Software Engineer supporting AT&T's Capabilities
+            description: `Currently, I work as a Software Engineer supporting AT&T's Capabilities
              Evolution - the business unit responsible for all learning, training, and
-             skills development within the company. In my role, I am a part of an Agile team
-             of full-stack developers working together to deliver a high-quality, easy to use
-             web application. My main responsibilities include Java development on
-             our REST API, which we use to serve clients throughout our application
-             ecosystem. Moreover, I have an active role in our application archicture,
-             deployment process, and requirements planning.`,
+             skills development within the company.
+             In my role, I work as one of the lead developers and architects on a team developing
+             and delivering a high-quality, easy-to-use web application and related services.
+             My day-to-day responsibilities as a developer include programming of our REST
+             API and front-end web application. As a developer, I'm a strong advocate for code
+             simplicity, readability, reuseability, and test-driven development.
+             As a lead developer on the team, I regularly collaborate with other team members
+             on reviewing work and brainstorming solutions to issues that arise. Moreover, I'm
+             a regular participant in the team's requirements planning, which we use to filter
+             and prepare incoming features for the development team.
+             As an architect, I actively monitor the performance of our applications and
+             architecture across our various environments, and design, coordinate, and implement
+             new solutions when needed.
+            `,
             title: 'Software Engineer',
             imageUrl: 'att_globe.jpg'
         },
@@ -65,8 +73,10 @@ export class ResumeService {
             location: 'Bethesda, MD',
             startDate: new Date(2014, 5),
             endDate: new Date(2016, 4),
-            description: `While at RainKing - an enterprise software company that offered
-             sales intelligence through its web application - I worked on the Research Operations
+            description: `
+            After graduating from college, I began working at RainKing Solutions,
+             a SaaS company that offered sales intelligence on a variety of industries
+             across the globe. While there, I worked on the Research Operations
              team, primarily tasked with evaluating existing workflows for opportunities for
              improvements, and subsequently designing and implementing new procedures when
              when needed. One simple improvement I made during my time there was converting
@@ -78,11 +88,11 @@ export class ResumeService {
         },
     ];
 
-    private mainSkills: String[] = ['Java 8', 'Java Persistence API (JPA)', 'Angular',
+    private mainSkills: String[] = ['Java 8', 'JPA', 'Angular',
         'Jenkins', 'Maven', 'MySQL', 'Docker', 'Spring Boot', 'Linux', 'Python', 'CSS3', 'HTML5',
         'Git', 'REST'];
 
-    private otherSkills: String[] = ['Tensorflow', 'Keras', 'Flask', 'Swift', 'MongoDB', 'PostgreSQL'];
+    private otherSkills: String[] = ['Tensorflow', 'Keras', 'Flask', 'Swift', 'MongoDB', 'PostgreSQL', 'AWS S3'];
 
     public getEducationHistory(): Education[] {
         return this.educationHistory;
