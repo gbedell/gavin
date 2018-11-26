@@ -2,7 +2,7 @@
 
 <div class="clr-row">
 
-  <div class="clr-col-12 clr-col-md">
+  <div class="clr-col">
 
     <div class="card">
 
@@ -27,9 +27,7 @@
 
         </div>
 
-        <p class="card-text">{{ description }}</p>
-
-        <p class="card-text">{{ description }}</p>
+        <p *ngFor="let description of descriptions" class="card-text">{{ description }}</p>
 
       </div>
 
@@ -37,7 +35,7 @@
 
   </div>
 
-  <div class="clr-col-12 clr-col-md-auto">
+  <div class="clr-col-12 clr-col-sm-auto">
 
     <div class="card">
 
