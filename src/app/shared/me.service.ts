@@ -35,13 +35,18 @@ export class MeService {
         }
     ];
 
-    private myDescription: String = `
-    Welcome to my website. I currently live in Dallas, TX, but I was born and raised on
-     Long Island, NY. I attended the University of Maryland (College Park), graduating
-     in 2014 with a B.A. in Economics. By trade, I am a Software Engineer, which I love
-     doing even in my spare time (as this website is hopefully evidence of). Besides doing
-     that, I like to keep myself busy by staying active - golf, volleyball, basketball,
-     weight-lifting, running - and trying to read as much as I can.`;
+    private intro1 = 'Hi, I\'m Gavin - welcome to my website.';
+
+    private intro2 = `
+    I live in Dallas and work at AT&T. I grew up on Long Island, NY and previously
+     studied economics at the University of Maryland, and software engineering with
+     Udacity.
+    `;
+
+    private intro3 = `
+    Currently, my interests are across a wide spectrum, but include deep learning systems,
+     fitness and nutrition, management and leadership, and financial markets.
+    `;
 
     private iconAttributions: String[] = [
         `<div>Icons made by <a href="http://www.freepik.com" title="Freepik">Freepik</a>
@@ -81,7 +86,11 @@ export class MeService {
         return this.socialLinks;
     }
 
-    public getMyDescription(): String {
-        return this.myDescription;
+    public getDescriptions(): String[] {
+        const descriptions = [];
+        descriptions.push(this.intro1);
+        descriptions.push(this.intro2);
+        descriptions.push(this.intro3);
+        return descriptions;
     }
 }
