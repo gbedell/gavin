@@ -35,7 +35,7 @@
 
   </div>
 
-  <div class="clr-col-12 clr-col-sm-auto">
+  <div *ngIf="socialLinks" class="clr-col-12 clr-col-sm-auto">
 
     <div class="card">
 
@@ -44,14 +44,17 @@
       </div>
 
       <ul class="list-group list-group-flush">
-        <li *ngFor="let social of socialLinks" class="list-group-item">
-          <a href="{{ social.url }}" class="social-link">
-            <img class="social-image" src="{{ social.imageUrl }}">
-          </a>
-          <span>
-            {{ social.name }}
-          </span>
-        </li>
+
+        <a *ngFor="let social of socialLinks" href="{{ social.url }}" class="social-link" target="_blank">
+
+          <li class="list-group-item">
+
+            <img class="social-image" src="{{ social.imageUrl }}">{{ social.name }}
+
+          </li>
+
+        </a>
+
       </ul>
 
     </div>
