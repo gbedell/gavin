@@ -4,4 +4,5 @@
 export class Tab {
     displayName: String;
     route: String;
+    order: number;
 }

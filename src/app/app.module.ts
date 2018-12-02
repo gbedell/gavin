@@ -1,6 +1,5 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-import { RouterModule, Routes } from '@angular/router';
 
 import { AppComponent } from './app.component';
 import { ReadingComponent } from './reading/reading.component';
@@ -15,34 +14,8 @@ import { SkillsComponent } from './resume/skills/skills.component';
 import { HeaderComponent } from './header/header.component';
 import { ClarityModule } from '@clr/angular';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-
-const appRoutes: Routes = [
-  {
-    path: 'bookshelf',
-    component: ReadingComponent
-  },
-  {
-    path: 'home',
-    component: HomeComponent
-  },
-  {
-    path: 'me',
-    component: MeComponent
-  },
-  {
-    path: 'resume',
-    component: ResumeComponent
-  },
-  {
-    path: 'links',
-    component: LinksComponent
-  },
-  {
-    path: '**',
-    redirectTo: 'home',
-    pathMatch: 'full'
-  },
-];
+import { AppRoutingModule } from './app-routing.module';
+import { ProjectsModule } from './projects/projects.module';
 
 @NgModule({
   declarations: [
@@ -58,14 +31,12 @@ const appRoutes: Routes = [
     HeaderComponent
   ],
   imports: [
-    RouterModule.forRoot(
-      appRoutes,
-      { enableTracing: false },
-    ),
     BrowserModule,
     SharedModule,
     ClarityModule,
-    BrowserAnimationsModule
+    BrowserAnimationsModule,
+    ProjectsModule,
+    AppRoutingModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
