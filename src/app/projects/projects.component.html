@@ -1,3 +1,11 @@
-<p>
-  projects works!
-</p>
+<h2>Projects</h2>
+
+<div *ngIf="projects" class="clr-row">
+
+  <div *ngFor="let project of projects" class="col-lg-4">
+
+    <gavin-project [project]="project"></gavin-project>
+
+  </div>
+
+</div>
