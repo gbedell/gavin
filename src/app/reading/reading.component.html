@@ -8,7 +8,7 @@
 
   </div>
 
-  <div class="clr-col-sm-12 clr-col-lg-8 books-container">
+  <div *ngIf="books" class="clr-col-sm-12 clr-col-lg-8 books-container">
 
     <div *ngFor="let book of books" class="book">
 
