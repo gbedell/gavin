@@ -167,7 +167,6 @@ export class ReadingService {
       dateStarted: null,
       dateFinished: new Date(2018, 10, 1),
       imageUrl: 'toolsOfTitans.jpg'
-
     }
   ];
 
@@ -176,6 +175,12 @@ export class ReadingService {
   }
 
   public getBooks(): Book[] {
-    return this.books;
+    return this.books.sort((a: Book, b: Book) => {
+      if (a.dateFinished === null) { return -1; }
+      if (b.dateFinished === null) { return 1; }
+      if (a.dateFinished.getTime() < b.dateFinished.getTime()) { return 1; }
+      if (a.dateFinished.getTime() > b.dateFinished.getTime()) { return -1; }
+      return 0;
+    });
   }
 }

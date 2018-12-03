@@ -7,12 +7,12 @@
 
 @media (max-width: 768px) {
     .books-container {
-        justify-content: center;
+        justify-content: space-evenly;
     }
 }
 
 .book {
-    margin: 0 12px 12px 12px;
+    margin: 0 12px 12px 0px;
 }
 
 .book-image {

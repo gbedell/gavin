@@ -1,8 +1,18 @@
-.social-link {
-    padding-right: 0.5rem;
-}
-
 .social-image {
     width: 24px;
     height: 24px;
+    margin-right: 0.5rem;
+}
+
+.social-link {
+    text-decoration: none;
+    color: #000 !important;
+}
+
+.social-link:hover {
+    text-decoration: none;
+}
+
+.social-link:visited {
+    color: #000 !important;
 }
