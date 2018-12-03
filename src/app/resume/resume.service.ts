@@ -95,18 +95,18 @@ export class ResumeService {
     private otherSkills: String[] = ['Tensorflow', 'Keras', 'Flask', 'Swift', 'MongoDB', 'PostgreSQL', 'AWS S3'];
 
     public getEducationHistory(): Education[] {
-        return this.educationHistory;
+        return this.educationHistory.sort((a: Education, b: Education) => b.dateCompleted.getTime() - a.dateCompleted.getTime());
     }
 
     public getWorkHistory(): Work[] {
-        return this.workHistory;
+        return this.workHistory.sort((a: Work, b: Work) => b.startDate.getTime() - a.startDate.getTime());
     }
 
     public getMainSkills(): String[] {
-        return this.mainSkills;
+        return this.mainSkills.sort();
     }
 
     public getOtherSkills(): String[] {
-        return this.otherSkills;
+        return this.otherSkills.sort();
     }
 }
