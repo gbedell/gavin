@@ -18,13 +18,8 @@
 .book-image {
     width: 116px;
     height: 176px;
-    opacity: 0.5;
 }
 
 .book-image:hover {
     opacity: .75;
-}
-
-.recommended-book {
-    opacity: 1;
 }
