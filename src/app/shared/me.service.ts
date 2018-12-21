@@ -39,14 +39,13 @@ export class MeService {
 
     private intro2 = `
     I live in Dallas and work at AT&T. I grew up on Long Island, NY and previously
-     studied economics at the University of Maryland, and software engineering with
-     Udacity.
-    `;
+     studied economics at the University of Maryland, and software development with
+     Udacity.`;
 
     private intro3 = `
-    Currently, my interests are across a wide spectrum, but include deep learning systems,
-     fitness and nutrition, management and leadership, and financial markets.
-    `;
+    Currently, my interests include artificial intelligence and deep learning,
+     fitness and nutrition, management, leadership, and entrepreneurship, and
+     financial markets.`;
 
     private iconAttributions: String[] = [
         `<div>Icons made by <a href="http://www.freepik.com" title="Freepik">Freepik</a>

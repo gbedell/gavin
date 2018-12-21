@@ -13,13 +13,13 @@ import { Link } from '../../models/link.model';
 export class LinksComponent implements OnInit {
   heading = 'Links';
   links: Link[] = [];
-  intro =  `Here is a collection of links to anything that I've found interesting
-   or has caught my attention.`;
+  intro: String;
 
   constructor(private linksService: LinksService) { }
 
   ngOnInit() {
     this.links = this.linksService.getLinks();
+    this.intro = this.linksService.getIntro();
   }
 
 }
