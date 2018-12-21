@@ -12,12 +12,12 @@
 }
 
 .book {
-    margin: 0 12px 12px 0px;
+    margin: 0 6px 6px 0px;
 }
 
 .book-image {
-    width: 116px;
-    height: 176px;
+    width: 100px;
+    height: 150px;
 }
 
 .book-image:hover {
